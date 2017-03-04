@@ -120,7 +120,7 @@
 			<h2><a href="http://www.skolnikwine.com">skolnikwine.com</a></h2>
 			<p><a href="http://skolnikwine.com/cpanel">skolnikwine.com/cpanel</a></p>
 			<p><a href="https://server2.sherwoodhosting.com:2083/cpsess5027170468/3rdparty/phpMyAdmin/index.php#PMAURL-0:index.php?db=&table=&server=1&target=&lang=en&collation_connection=utf8_general_ci&token=5e699c49b5e3b9bbc49f78db1c4d5406">skolnikwine.com/phpmyadmin</a></p>
-			<p><a href="http://www.skolnikwine.com/wp-login.php">skolnikwine.com/blog</a></p>
+			<p><a href="http://www.skolnikwine.com/rjlogin">skolnikwine.com/blog</a></p>
 			<p><a href="http://skolnikwine.rjm">skolnikwine.rjm (local)</a></p>
 		</div>
 		<div class="client">
