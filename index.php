@@ -47,10 +47,12 @@
 	</div>
 	<nav class="menu">
 		<ul>
+		<li><a href="http://connect.jujama.com/NGLCC17">nglcc17</a></li>
 			<li><a href="http://duckduckgo.com"><img src="images/duckduckgo.jpg" width="150" height="99"></a> </li>
 			<li><a href="http://google.com"><img src="images/google.jpg" width="150" height="53"></a> </li>
 			<li><a href="http://youtube.com"><img src="images/youtube.jpg" width="150" height="106" alt="YouTube"></a> </li>
 			<li> <a href="http://dvd.netflix.com/Queue?lnkctr=mhbque&qtype=DD"><img src="images/netflix.png" width="150" height="40" alt="Netflix"></a> </li>
+			<li><a href="http://www.hulu.com"><img src="images/hulu.svg" alt="Hulu" width="150" height="40"></a></li>
 			<li><a href="https://www.tdameritrade.com"><img src="images/tdameritrade.png" width="150" height="40" alt="TD Ameritrade"></a> </li>
 			<li><a href="http://facebook.com"><img src="images/facebook.png" width="150" height="43" alt="Facebook"></a> </li>
 			<il><a href="http://chicagopotters.com"><img src="images/chicagopotters.jpg" alt="ChicagoPotters" width="150" height="64"></a> </il>
@@ -104,6 +106,9 @@
 			 <li><a href="http://www.colorzilla.com/gradient-editor/">CSS Gradient Generator</a></li>
 			 <li><a href="https://github.com/"><img src="images/github.png" alt="GitHub" width="150" height="38"></a></li>
 			 <li><a href="https://bitbucket.org/"><img src="images/bitbucket.png" alt="Bitbucket" width="150"></a></li>
+			 <li><a href="http://www.digitalartsonline.co.uk/features/typography/best-free-fonts-30-free-typefaces-every-designer-should-have/">Free fonts</a></li>
+			 <li><a href="http://localhost/search-replace-db/">Search Replace Database (move wordpress)</a></li>
+			 <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a></li>
 		</ul>
 	</nav>
 	<div class="clients">
@@ -115,6 +120,8 @@
 			<p><a href="http://skolnik.com/cpanel">skolnik.com/cpanel</a></p>
 			<p><a href="https://server6.sherwoodhosting.com:2083/cpsess3467537177/3rdparty/phpMyAdmin/index.php#PMAURL-1:sql.php?db=skolnik_skolnik&table=webideas&server=1&target=&token=3c05041c4fcf54b595e75f8ccda5b9a8">skolnik.com/phpmyadmin</a></p>
 			<p><a href="http://www.skolnik.com/blog/wp-login.php">skolnik.com/blog</a></p>
+			<p><a href="http://skolnik.rjm/admin/newnewsletter.php">New Newsletter</a></p>
+			<p><a href="http://skolnik.rjm/makenewsletter.php">Make Newsletter</a></p>
 		</div>
 		<div class="client">
 			<h2><a href="http://www.skolnikwine.com">skolnikwine.com</a></h2>
