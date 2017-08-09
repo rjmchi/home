@@ -2,12 +2,14 @@
 .sidebar {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 14px;
-	background-color:#d8ecf3;
-	float:right;
+	display:flex;
+	justify-content: flex-end;	
 }
 
 .sidebar table {
+	background-color:#d8ecf3;	
 	border:1px solid #222;
+	flex:0 0 30%;
 }
 .sidebar table td {
 	padding:0 20px;
