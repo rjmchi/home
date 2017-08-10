@@ -13,7 +13,7 @@ class ManageReminders{
 		
 		$dbname = "reminders";
 		$user = "root";
-		$pw = "";
+		$pw = "kether1330";
 		$server = "localhost";
 		
 		try {
