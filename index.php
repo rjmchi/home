@@ -47,6 +47,7 @@
 	</div>
 	<nav class="menu">
 		<ul>
+			<li><a href="http://www.unstoppableguitarsystem.com/categories/74607">Guitar Lessons</a></a></li>
 		<li><a href="http://connect.jujama.com/NGLCC17">nglcc17</a></li>
 			<li><a href="http://duckduckgo.com"><img src="images/duckduckgo.jpg" width="150" height="99"></a> </li>
 			<li><a href="http://google.com"><img src="images/google.jpg" width="150" height="53"></a> </li>
