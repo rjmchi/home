@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".techspec tr").hover(function(){$(this).css("background-color","#ddd")},function(){$(this).css("background-color","#ffffff")})});

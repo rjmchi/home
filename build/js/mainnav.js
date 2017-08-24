@@ -1,1 +1,0 @@
-!function(){$("#nav li a.headx").hover(function(){$("ul.dropdown").stop().slideUp(),$("#nav li").removeClass("selected"),$(this).parent().addClass("selected"),$(this).parent().children("ul:first").stop().slideDown()})}();

@@ -1,0 +1,185 @@
+@charset "utf-8";
+@import 'reset.css';
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.page_wrap {
+	position:relative;
+	margin:25px;
+}
+
+.addlink {
+	flex-basis:50%;
+	border:1px solid #ccc;
+	padding:5px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color:#D9DCE5;
+}
+.addlink label {
+	font-weight: bold;
+	flex-basis:20%;	
+}
+.addlink input{
+	padding:3px;
+	flex-basis:75%;
+	margin-top:3px;
+}
+
+nav.menu ul {
+	list-style:none;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+}
+
+nav.menu li {
+	padding:5px;	
+	border:outset 2px #ccc;
+	flex-basis:150px;
+	margin:10px;
+	min-height:30px;
+}
+
+nav.menu a {
+	text-align:center;
+	text-decoration:none;
+	font-size:12px;
+	background-color:#fff;
+	color:#333;
+	display:block;
+}
+
+nav.menu li:hover {
+	border:inset 2px #ccc;
+	opacity:.6;
+}
+
+.client {
+	margin:10px;
+}
+.client p {
+	margin-left:25px;
+}
+
+.sidebar {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	display:flex;
+	justify-content: space-between;	
+}
+
+.sidebar table {
+	background-color:#d8ecf3;	
+	border:1px solid #222;
+	flex:0 0 30%;
+}
+.sidebar table td {
+	padding:0 20px;
+}
+.odd {
+	background-color:#eee;
+}
+
+.even {
+	background-color:#ddd;
+}
+
+.today {
+	color:#f00;
+}
+.past {
+	background-color:#ff0;
+	color:#f00;
+	font-weight:bold;
+}
+.btn {
+	margin-top:4px;
+	margin-left:4px;
+	display:block;
+	width:100px;
+	height:25px;
+	text-align:center;
+	background-color:#ACAEBF;
+	border:outset #000;
+	color:#000;
+	text-decoration: none;
+	font-family: Helvetica, Arial, "sans-serif";
+	font-size:15px;
+}
+
+.sidebar {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	display:flex;
+	justify-content: space-between;	
+}
+
+.sidebar table {
+	background-color:#d8ecf3;	
+	border:1px solid #222;
+	flex:0 0 30%;
+}
+.sidebar table td {
+	padding:0 20px;
+}
+.odd {
+	background-color:#eee;
+}
+
+.even {
+	background-color:#ddd;
+}
+
+.today {
+	color:#f00;
+}
+.past {
+	background-color:#ff0;
+	color:#f00;
+	font-weight:bold;
+}
+.link_table {
+	padding:20px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around
+}
+
+.link_table input[type="text"] {
+	padding:5px;
+}
+.link_table fieldset {
+	padding:5px;
+}
+.link_table .name {
+	width:225px;
+}
+.link_table .url {
+	width:400px;
+}
+.link_table .image {
+	width:170px;
+}
+.link_table .image_width {
+	width:50px;
+}
+.link_table .image_height {
+	width:50px;
+}
+.link_table .sort_order {
+	width:50px;
+}
+.link_table .delete {
+	width:50px;
+}
+.link_table .update {
+	width:50px;
+}
+
+
+

@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".slide-show").cycle({fx:"scrollLeft",speed:1e3,timeout:6e3})});
