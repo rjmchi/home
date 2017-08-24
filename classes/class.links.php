@@ -11,7 +11,7 @@ class ManageLinks{
 		fclose($this->handle);
 	}
 	function __destruct() {
-//		fclose($this->handle);
+		
 	}
 
 	
