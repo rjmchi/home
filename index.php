@@ -1,4 +1,5 @@
 <?php require_once('classes/class.reminder.php');?>
+<?php require_once('classes/database.php');?>
 <?php 
 	$reminders  = new ManageReminders;
 
@@ -29,6 +30,10 @@
 		$reminders->addReminder($duedate, $_POST['message']);
 	}
 
+
+	if (isset($_POST['addlink'])){
+		$db->insert ('links', array("name"=>$_POST['name'], "link"=>$_POST['link'], "image"=>$_POST['image'], "image_width"=>$_POST['width'], "image_height"=>$_POST['height'])  );
+	}
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -41,76 +46,26 @@
 </head>
 
 <body>
+
 <div class="page-wrap">
 	<div class="sidebar">
+		<form method="post" class="addlink" id="addlink" name="addlink" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+		<label for="name">Name: </label>
+			<input type="text" name="name">
+			<label for="link">Link: </label>
+			<input type="text" name="link">
+			<label for="image">Image: </label>
+			<input type="text" name="image">
+			<label for="width">Image Width:</label>
+			<input type="text" name="width">
+			<label for="height">Image Height:</label>
+			<input type="text" name="height">			
+			<button type="submit" name="addlink">AddLink</button>
+		</form>
 		<?php $reminders->showReminders(); ?>
 	</div>
 	<nav class="menu">
-		<ul>
-			<li><a href="http://www.unstoppableguitarsystem.com/categories/74607">Guitar Lessons</a></a></li>
-		<li><a href="http://connect.jujama.com/NGLCC17">nglcc17</a></li>
-			<li><a href="http://duckduckgo.com"><img src="images/duckduckgo.jpg" width="150" height="99"></a> </li>
-			<li><a href="http://google.com"><img src="images/google.jpg" width="150" height="53"></a> </li>
-			<li><a href="http://youtube.com"><img src="images/youtube.jpg" width="150" height="106" alt="YouTube"></a> </li>
-			<li> <a href="http://dvd.netflix.com/Queue?lnkctr=mhbque&qtype=DD"><img src="images/netflix.png" width="150" height="40" alt="Netflix"></a> </li>
-			<li><a href="http://www.hulu.com"><img src="images/hulu.svg" alt="Hulu" width="150" height="40"></a></li>
-			<li><a href="https://www.tdameritrade.com"><img src="images/tdameritrade.png" width="150" height="40" alt="TD Ameritrade"></a> </li>
-			<li><a href="http://facebook.com"><img src="images/facebook.png" width="150" height="43" alt="Facebook"></a> </li>
-			<il><a href="http://chicagopotters.com"><img src="images/chicagopotters.jpg" alt="ChicagoPotters" width="150" height="64"></a> </il>
-			<li><a href="http://www.skolnik.com"><img src="images/skolnik.jpg" alt="Skolnik Industries" width="150" height="42"></a> </li>
-			<li><a href="http://www.skolnik.com/blog/wp-admin">Skolnik Wordpress</a> </li>
-			
-			<li><a href="https://www.linkedin.com/"><img src="images/linkedin.jpg" width="150" height="48" alt="LinkedIn"></a> </li>
-			
-			<li><a href="http://imdb.com"><img src="images/imdb.jpg" width="150" height="72" alt="IMDB"></a> </li>
-			
-			 <li>
-			 	<a href="http://www.rjmchicago.com"><img src="images/rjmchicagologo.jpg" alt="RJMChicago.com" width="150"></a>
-			 </li>
-			<li><a href="http://www.rjmprogramming.com">RJMProgramming.com</a> </li>
-			<li><a href="http://rjmprogramming.com/get_comments.php">RJMProgramming.com Comments</a> </li>
-			
-			<li>
-				<a href="http://www.rjmprogramming.com/cpanel">RJMProgramming CPanel</a>
-			</li>
-			<li><a href="http://constantcontact.com/login"><img src="images/constant-contact.png" alt="constant contact" width="150" height="25"></a> </li>
-			<li><a href="http://127.0.0.1/phpmyadmin">Local PHPMyAdmin</a> </li>
-			
-			<li>
-			 	<a href="http://layerstyles.org/">Layer Styles</a>
-			 </li>
-			 
-			<li><a href="http://primercss.com/index.php">Primer CSS</a> </li>
-			
-			<li>
-				<a href="https://pixlr.com/">Pixlr</a> </li>
-				
-				<li>
-					<a href="http://www.spritecow.com/">Sprite Cow</a>
-				</li>
-			<li><a href="http://127.0.0.1/wordpress">Local Wordpress</a> </li>
-			
-			<li>
-				<a href="http://www.myprimemail.com"><img src="images/primemail.gif" alt="prime mail" width="150" height="16"></a>
-			</li>
-			<li><a href="http://astrolibrary.org/lessons/">Astrology Lessons</a> </li>
-			
-			 <li>
-			 	<a href="https://www.google.com/webmasters/tools/home?hl=en">Webmaster Tools</a>
-			 </li>
-			<li><a href="http://tutorial-index.com/">Tutorial Index</a> </li>
-			
-			<li>
-			 	<a href="https://www.youtube.com/watch?v=LIqwpwZJlMo">Tarot Documentary</a>
-			 </li>
-			 <li><a href="http://fitbay.com">FitBay</a></li>
-			 <li><a href="http://www.colorzilla.com/gradient-editor/">CSS Gradient Generator</a></li>
-			 <li><a href="https://github.com/"><img src="images/github.png" alt="GitHub" width="150" height="38"></a></li>
-			 <li><a href="https://bitbucket.org/"><img src="images/bitbucket.png" alt="Bitbucket" width="150"></a></li>
-			 <li><a href="http://www.digitalartsonline.co.uk/features/typography/best-free-fonts-30-free-typefaces-every-designer-should-have/">Free fonts</a></li>
-			 <li><a href="http://localhost/search-replace-db/">Search Replace Database (move wordpress)</a></li>
-			 <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a></li>
-		</ul>
+		<?php $db->getLinks();?>
 	</nav>
 	<div class="clients">
 		<h1>Clients</h1>

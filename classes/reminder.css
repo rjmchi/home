@@ -3,7 +3,7 @@
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 14px;
 	display:flex;
-	justify-content: flex-end;	
+	justify-content: space-between;	
 }
 
 .sidebar table {

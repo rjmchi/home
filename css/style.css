@@ -10,6 +10,25 @@ body {
 	margin:25px;
 }
 
+.addlink {
+	flex-basis:50%;
+	border:1px solid #ccc;
+	padding:5px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color:#D9DCE5;
+}
+.addlink label {
+	font-weight: bold;
+	flex-basis:20%;	
+}
+.addlink input{
+	padding:3px;
+	flex-basis:75%;
+	margin-top:3px;
+}
+
 nav.menu ul {
 	list-style:none;
 	display:flex;
