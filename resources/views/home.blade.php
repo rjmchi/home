@@ -51,7 +51,7 @@
 </tr>
 @endforeach 
 
-<form action="/AddReminder" method="post">
+<form action={{route("addreminder")}} method="post">
 {{ csrf_field() }}		
 			<tr>
 				<td> <input name="date" type="text"></td>
