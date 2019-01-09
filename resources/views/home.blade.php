@@ -7,6 +7,7 @@
 </head>
 
 <body>
+
 <div class="page_wrap">
 
 <div class="content">
@@ -24,11 +25,12 @@
 	<input type="text" name="width" value="150">
 	<label for="height">Image Height:</label>
 	<input type="text" name="height">
-	<label for="height">Sort Order:</label>
+	<label for="sort_order">Sort Order:</label>
 	<input type="text" name="sort_order" value="1">		
 	<button type="submit" class="btn">Add Link</button>
 	<a href="{{ route('editlinks') }}" class="btn">Edit Links</a>
 </form>
+
 
 <table>
 @php $odd = false; @endphp
@@ -50,17 +52,19 @@
 
 </tr>
 @endforeach 
-
 <form action={{route("addreminder")}} method="post">
+
 {{ csrf_field() }}		
 			<tr>
 				<td> <input name="date" type="text"></td>
 				<td><input name="message" type="text"></td>
 				<td><input name="add" type="submit" value="Add"></td>
-			</tr>		
-			</form>
+			</tr>
+</form>				
 </table>
-</div>
+
+</div><!-- end sidebar-->
+	
 <nav class="menu">
 <ul>
 @foreach ($links as $link)
@@ -89,9 +93,8 @@
 		</div>
 	@endforeach
 
-</div>
-</div>
+</div><!-- end content-->
 <footer><footer>
-</div>
+</div> <!-- end pagewrap-->
 </body>
 </html>
