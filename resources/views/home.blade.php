@@ -30,6 +30,10 @@
 	<button type="submit" class="btn">Add Link</button>
 	<a href="{{ route('editlinks') }}" class="btn">Edit Links</a>
 </form>
+	
+	@if(isset($alert))
+	<p>{{$alert}}</p>
+	@endif
 
 
 <table>

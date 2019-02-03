@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\IPAddr;
 
 class HomeController extends Controller
 {
@@ -46,6 +47,25 @@ class HomeController extends Controller
 			}			
 		}
 	
+		$curl = curl_init();
+		curl_setopt($curl, CURLOPT_URL, 'http://www.rjmprogramming.com/getipaddr.php');
+		curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
+		$result = curl_exec($curl);
+		curl_close($curl);
+
+		$strtoday = date('m-d-Y', $today);
+		$ip = IPAddr::orderBy('created_at', 'DESC')->first();
+		if ($ip) {
+			if ($ip->ip != $result) {
+				$ip=new IPAddr;
+				$ip->day = $strtoday;
+				$ip->ip = $result;
+				$ip->save();		
+				$data['alert'] = 'IP Address Change';
+			}
+		}
+		
+		
 		$data['title'] = "Robert's Home";
 		$data['reminders'] = $reminders;
 		
@@ -159,4 +179,28 @@ class HomeController extends Controller
 		\App\Reminder::destroy($request->id);
 		return redirect()->back();		
 	}	
+	
+	public function ListVideos() {
+		$data['title'] = "Videos";
+		$data['links'] = \App\Video::orderBy('sort_order')->get();	
+		
+		return view('videos', $data);		
+	}
+	
+	public function addVideo(Request $request) {
+		\App\Video::create([
+			'name'=> $request->name,
+			'url'=> $request->url,
+			'notes'=> $request->notes,
+			'sort_order'=> $request->sort_order,			
+		]);
+		
+		return redirect()->back();		
+	}
+	public function listips() {
+		$data['title'] = 'List IPs';
+		$data['addrs'] = IPAddr::orderBy('day', 'DESC')->get();
+		return view('list_ips')->with($data);
+	}
 }
+

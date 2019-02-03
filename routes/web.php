@@ -19,3 +19,12 @@ Route::post('/DeleteLink', 'HomeController@deletelink')->name('deletelink');
 Route::post('/AddReminder', 'HomeController@addReminder')->name('addreminder');
 Route::post('/DeleteReminder', 'HomeController@deleteReminder')->name('deletereminder');
 Route::get('/ReorderLinks', 'HomeController@reorderLinks')->name('reorderlinks');
+
+Route::get('/ListVideos', 'HomeController@listvideos')->name('listvideos');
+Route::post('/AddVideo', 'HomeController@addvideo')->name('addvideo');
+Route::get('/EditVideos', 'HomeController@editvideos')->name('editvideos');
+
+Route::get('listips', 'HomeController@listips');
+
+Route::resource('clients', 'ClientController');
+

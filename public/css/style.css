@@ -180,6 +180,13 @@ nav.menu li:hover {
 .link_table .update {
 	width:50px;
 }
-
+		
+table.iplist {
+	padding:10px;
+	margin:10px;
+}
+table.iplist th, table.iplist td {
+	padding:5px;
+}
 
 
