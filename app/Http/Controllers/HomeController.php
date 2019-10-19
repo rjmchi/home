@@ -55,16 +55,18 @@ class HomeController extends Controller
 
 		$strtoday = date('m-d-Y', $today);
 		$ip = IPAddr::orderBy('created_at', 'DESC')->first();
-		if ($ip) {
+		if ($result == 0){
+			echo 'ip address is 0';
+		} else if ($ip) {
 			if ($ip->ip != $result) {
 				$ip=new IPAddr;
 				$ip->day = $strtoday;
 				$ip->ip = $result;
 				$ip->save();		
 				$data['alert'] = 'IP Address Change';
+				echo 'IP Address Change';
 			}
 		}
-		
 		
 		$data['title'] = "Robert's Home";
 		$data['reminders'] = $reminders;
@@ -180,26 +182,9 @@ class HomeController extends Controller
 		return redirect()->back();		
 	}	
 	
-	public function ListVideos() {
-		$data['title'] = "Videos";
-		$data['links'] = \App\Video::orderBy('sort_order')->get();	
-		
-		return view('videos', $data);		
-	}
-	
-	public function addVideo(Request $request) {
-		\App\Video::create([
-			'name'=> $request->name,
-			'url'=> $request->url,
-			'notes'=> $request->notes,
-			'sort_order'=> $request->sort_order,			
-		]);
-		
-		return redirect()->back();		
-	}
 	public function listips() {
 		$data['title'] = 'List IPs';
-		$data['addrs'] = IPAddr::orderBy('day', 'DESC')->get();
+		$data['addrs'] = IPAddr::orderBy('updated_at', 'DESC')->get();
 		return view('list_ips')->with($data);
 	}
 }
