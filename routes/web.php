@@ -20,11 +20,15 @@ Route::post('/AddReminder', 'HomeController@addReminder')->name('addreminder');
 Route::post('/DeleteReminder', 'HomeController@deleteReminder')->name('deletereminder');
 Route::get('/ReorderLinks', 'HomeController@reorderLinks')->name('reorderlinks');
 
-Route::get('/ListVideos', 'HomeController@listvideos')->name('listvideos');
-Route::post('/AddVideo', 'HomeController@addvideo')->name('addvideo');
-Route::get('/EditVideos', 'HomeController@editvideos')->name('editvideos');
-
 Route::get('listips', 'HomeController@listips');
 
 Route::resource('clients', 'ClientController');
+
+Route::resource('autoreminders', 'AutoreminderController');
+
+Route::resource('videos', 'VideoController');
+Route::get('reordervideos','VideoController@reorder')->name('videos.reorder');
+
+Route::get('/hydration', 'HydrationController@index')->name('hydration');
+Route::post('/hydration', 'HydrationController@calculate')->name('hydration.calc');
 
