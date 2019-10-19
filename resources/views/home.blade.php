@@ -1,16 +1,6 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-<meta charset="utf-8">
-<title>{{$title}}</title>
-<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-</head>
+@extends ('layouts.master')
+@section ('content')
 
-<body>
-
-<div class="page_wrap">
-
-<div class="content">
 <div class="sidebar">
 
 <form action="{{ route('addlink') }}" method="post" id="addlink" class="addlink">
@@ -34,7 +24,7 @@
 	@if(isset($alert))
 	<p>{{$alert}}</p>
 	@endif
-
+<div class="reminders">
 
 <table>
 @php $odd = false; @endphp
@@ -66,9 +56,12 @@
 			</tr>
 </form>				
 </table>
-
+	<a class="button" href="{{route('autoreminders.index')}}">Scheduled Reminders</a>
+</div><!--end reminders-->
 </div><!-- end sidebar-->
-	
+
+<a href="{{route('videos.index')}}">Videos</a>
+
 <nav class="menu">
 <ul>
 @foreach ($links as $link)
@@ -96,9 +89,4 @@
 			@endforeach
 		</div>
 	@endforeach
-
-</div><!-- end content-->
-<footer><footer>
-</div> <!-- end pagewrap-->
-</body>
-</html>
+@endsection

@@ -1,18 +1,11 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>{{ $title }}</title>
-<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-</head>
+@extends ('layouts.master')<html>
 
-<body>
-<div class="page-wrap">
-	<header>
-		<h1>{{$title}}</h1>
-	</header>
+@section('header')
+	<h2>{{$title}}</h2>
+@endsection
 	
-	<div class="content">
+@section ('content')
+	
 	<form action="{{ route('reorderlinks')}}">
 		<button type="submit">Reorder Links</button>
 	</form>
@@ -49,11 +42,4 @@
 		</form>			
 		
 	@endforeach
-	</div>		
-	</div>
-	<footer>
-		
-	</footer>
-</div>
-</body>
-</html>
+@endsection
