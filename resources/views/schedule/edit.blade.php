@@ -9,25 +9,24 @@
 <body>
 <div class="page-wrap">
 	<header>
-		<h1>{{$title}}</h1>
+		<h1>Edit Scheduled Reminder</h1>
 	</header>
 	
 	<div class="content">
-		
 
 		@include('partials.messages')		
 		
-		<form method="post" action="{{route('autoreminders.store')}}">
+		<form method="post" action="{{route('schedule.update', ['reminder'=>$reminder->id])}}">			
+			<input type="hidden" name="_method" value="PATCH">
 			{{csrf_field()}}
-			<label for="name">Name:</label>
-			<input type="text" name="name" value="{{old('name')}}">
+			<label for="message">Name:</label>
+			<input type="text" name="message" value="{{$reminder->message}}">
 			<label for="days">Days:</label>
-			<input type="text" name="days" value="{{old('days')}}">
+			<input type="text" name="days" value="{{$reminder->days}}">
 			<label for="next_due">Next Due:</label>
-			<input type="text" name="next_due" value="{{old('next_due')}}">
+			<input type="text" name="next_due" value="{{$reminder->due_date->format('m/d/Y')}}">
 			
-			
-			<button type="submit">Submit</button>
+			<button type="submit">Update</button>
 		
 		</form>
 	

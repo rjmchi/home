@@ -5,7 +5,7 @@
 @endsection
 @section ('content')
 		
-	<a class="button" href="{{route('autoreminders.create')}}">New Reminder</a>
+	<a class="button" href="{{route('schedule.create')}}">New Reminder</a>
 		
 		@php $odd = false; @endphp
 
@@ -21,14 +21,15 @@
 			<tr class="{{ ( $odd ) ? 'odd' : 'even' }}">
 				@php $odd = !$odd; @endphp				
 				
-				<td>{{$reminder->name}}</td>
+				<td>{{$reminder->message}}</td>
 				<td>{{$reminder->days}}</td>
-				<td>{{$reminder->next_due}}</td>
-				<td>Edit</td>
-				<td><form action="{{ route('autoreminders.destroy', $reminder->id) }}" method="post">
+				<td>{{$reminder->due_date->format('m/d/Y')}}</td>				
+				
+				<td><a href="{{route('schedule.edit', [$reminder->id])}}">Edit</a></td>
+				<td><form action="{{ route('schedule.destroy', $reminder->id) }}" method="post">
 					{{ csrf_field() }}
 					<input type="hidden" name="_method" value="delete">
-						<input name="delete" type="image" value="delete" src="images/del.png" alt="Delete">
+						<input name="delete" type="image" value="delete" src="../autoreminders/images/del.png" alt="Delete">
 						<input name="id" type="hidden" value="{{ $reminder->id }}">
 					</form></td>
 			</tr>

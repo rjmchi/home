@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import 'reset.css';
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.page_wrap {
+	position:relative;
+	margin:25px;
+}
+
+
+.odd {
+	background-color:#eee;
+}
+
+.even {
+	background-color:#ddd;
+}
+
+.client_table {
+	padding:20px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around
+}
+
+.client_table p {
+	flex-basis: 100%;
+}
+
+.client_table input[type="text"] {
+	padding:5px;
+}
+.client_table fieldset {
+	padding:5px;
+}
+.client_table .name {
+	width:225px;
+}
+.link_table .url {
+	width:400px;
+}
+
+
+.client_table .delete {
+	width:50px;
+}
+.client_table .update {
+	width:50px;
+}
+
+
+

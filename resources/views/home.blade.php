@@ -34,10 +34,11 @@
 <tr class="{{ $reminder->due }} {{ ( $odd ) ? 'odd' : 'even' }}">
 @php $odd = !$odd; @endphp
 
-<td> {{ $reminder->strdate }}</td>
-<td>{{ $reminder->message }}</td>
+<td>{{$reminder->due_date ? $reminder->due_date->format('m/d/Y'): '--'}}</td>
+
+	<td>{{ $reminder->message }}</td>
 <td>
-					<form action="{{ route('deletereminder') }}" method="post">
+					<form action="{{ route('deletereminder',[$reminder->id]) }}" method="post">
 					{{ csrf_field() }}
 						<input name="delete" type="image" value="delete" src="images/del.png" alt="Delete">
 						<input name="id" type="hidden" value="{{ $reminder->id }}">
@@ -46,17 +47,33 @@
 
 </tr>
 @endforeach 
+@foreach ($notes as $note) 
+<tr class="{{ ( $odd ) ? 'odd' : 'even' }}">
+@php $odd = !$odd; @endphp
+
+<td>&nbsp;</td>
+<td>{{ $note->message }}</td>
+<td>
+	<form action="{{ route('deletereminder') }}" method="post">
+	{{ csrf_field() }}
+	<input name="delete" type="image" value="delete" src="images/del.png" alt="Delete">
+	<input name="id" type="hidden" value="{{ $note->id }}">
+	</form>
+</td>
+
+</tr>	
+@endforeach
 <form action={{route("addreminder")}} method="post">
 
 {{ csrf_field() }}		
 			<tr>
-				<td> <input name="date" type="text"></td>
+				<td> <input name="due_date" type="text"></td>
 				<td><input name="message" type="text"></td>
 				<td><input name="add" type="submit" value="Add"></td>
 			</tr>
 </form>				
 </table>
-	<a class="button" href="{{route('autoreminders.index')}}">Scheduled Reminders</a>
+	<a class="button" href="{{route('schedule.index')}}">Scheduled Reminders</a>
 </div><!--end reminders-->
 </div><!-- end sidebar-->
 

@@ -4,56 +4,41 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\IPAddr;
+use Carbon\Carbon;
+use App\Reminder;
+use App\Link;
+use App\Client;
 
 class HomeController extends Controller
 {
     public function index() {
-		$reminders = \App\Reminder::orderBy('due_date')->get();
-		$data['links'] = \App\Link::orderBy('sort_order')->get();	
-		$data['clients'] = \App\Client::where('client_id',null)->get();	
+		$reminders = Reminder::whereNotNull('due_date')
+			->orderBy('due_date')
+			->get();
+		$notes = Reminder::whereNull('due_date')->get();
+				
+		$data['links'] = Link::orderBy('sort_order')->get();	
+		$data['clients'] = Client::where('client_id',null)->get();	
 
-		date_default_timezone_set('America/Chicago');
-		$now = localtime(time(), true);
-		$m = $now['tm_mon']+1;
-		$y = $now['tm_year']+1900;
-		$d = $now['tm_mday'];
-		$today = mktime(0,0,0,$m, $d, $y);	
-		
+		$today = Carbon::today();
+
 		foreach ($reminders as $reminder) {
-			if ($reminder->due_date)
-			{
-				if ($reminder->due_date == '2147483647')
-				{
-					$reminder->strdate = '';
-				}
-				else
-				{
-					$reminder->strdate = date( 'm-d-Y', $reminder->due_date );
-				}
-			}
-			else
-			{
-				$reminder->strdate = '';
-			}
-
 			$reminder->due = '';
-			if ($reminder->due_date == $today)
+			if ($today->equalTo($reminder->due_date))
 			{
 				$reminder->due = 'today';
-			}
-			if ($reminder->due_date < $today)
-			{
+			} else if ($today->greaterThan($reminder->due_date)) {
 				$reminder->due = 'past';
-			}			
+			}
 		}
-	
+
 		$curl = curl_init();
 		curl_setopt($curl, CURLOPT_URL, 'http://www.rjmprogramming.com/getipaddr.php');
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
 		$result = curl_exec($curl);
 		curl_close($curl);
 
-		$strtoday = date('m-d-Y', $today);
+		$strtoday = $today->format('m-d-Y');
 		$ip = IPAddr::orderBy('created_at', 'DESC')->first();
 		if ($result == 0){
 			echo 'ip address is 0';
@@ -70,6 +55,7 @@ class HomeController extends Controller
 		
 		$data['title'] = "Robert's Home";
 		$data['reminders'] = $reminders;
+		$data['notes'] = $notes;
 		
     	return view('home', $data);
 	}
@@ -152,33 +138,23 @@ class HomeController extends Controller
 	}
 	
 	public function addReminder(Request $request) {
-		$duedate = 2147483647;
-		date_default_timezone_set('America/Chicago');		
-		
-		if ($request->date)
-		{
-			$test_date = str_replace('-', '/', $request->date);
-			if (strlen($test_date) > 7)
-			{
-				$test_arr  = explode('/', $test_date);
-
-				$strdate = $test_arr[2] .'-'. $test_arr[0] .'-'. $test_arr[1];
-				if (checkdate($test_arr[0], $test_arr[1], $test_arr[2])) 
-				{
-					$duedate = mktime(0,0,0,$test_arr[0], $test_arr[1], $test_arr[2]);	
-				}
-			}
+		$r = new Reminder();
+		if ($request->due_date) {
+			$r->due_date = $request->due_date;
 		}
-		
-		\App\Reminder::create([
-			'message'=>$request->message,
-			'due_date'=>$duedate,			
-		]);		
+		$r->message = $request->message;
+		$r->save();
+
 		return redirect()->back();
 
 	}
-	public function deleteReminder(Request $request) {
-		\App\Reminder::destroy($request->id);
+	public function deleteReminder (Reminder $reminder) {
+		if ($reminder->days){
+			$reminder->due_date = $reminder->due_date->addDays($reminder->days);
+			$reminder->save();
+		} else {
+			$reminder->delete();
+		}
 		return redirect()->back();		
 	}	
 	

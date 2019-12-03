@@ -16,8 +16,10 @@ Route::post('/AddLink', 'HomeController@addLink')->name('addlink');
 Route::get('/EditLinks', 'HomeController@editLinks')->name('editlinks');
 Route::post('UpdateLink', 'HomeController@updateLink')->name('updatelink');
 Route::post('/DeleteLink', 'HomeController@deletelink')->name('deletelink');
+
 Route::post('/AddReminder', 'HomeController@addReminder')->name('addreminder');
-Route::post('/DeleteReminder', 'HomeController@deleteReminder')->name('deletereminder');
+Route::post('/DeleteReminder/{reminder}', 'HomeController@deleteReminder')->name('deletereminder');
+
 Route::get('/ReorderLinks', 'HomeController@reorderLinks')->name('reorderlinks');
 
 Route::get('listips', 'HomeController@listips');
@@ -32,3 +34,9 @@ Route::get('reordervideos','VideoController@reorder')->name('videos.reorder');
 Route::get('/hydration', 'HydrationController@index')->name('hydration');
 Route::post('/hydration', 'HydrationController@calculate')->name('hydration.calc');
 
+Route::get('/schedule', 'ScheduleController@index')->name('schedule.index');
+Route::post('schedule', 'ScheduleController@store')->name('schedule.store');
+Route::get('/schedule/create','ScheduleController@create')->name('schedule.create');
+Route::patch('/schedule/{reminder}','ScheduleController@update')->name('schedule.update');
+Route::delete('/schedule/{reminder}','ScheduleController@destroy')->name('schedule.destroy');
+Route::get('/schedule/{reminder}/edit','ScheduleController@edit')->name('schedule.edit');

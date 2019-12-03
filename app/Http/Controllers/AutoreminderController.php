@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Autoreminder;
+use App\Reminder;
+
 use Illuminate\Http\Request;
 
 class AutoreminderController extends Controller
@@ -74,7 +76,9 @@ class AutoreminderController extends Controller
      */
     public function edit(Autoreminder $autoreminder)
     {
-        //
+		$data['title'] = 'Edit Autoreminder';
+		$data['reminder'] = $autoreminder;
+		return view('autoreminders.edit')->with($data);
     }
 
     /**
@@ -86,8 +90,19 @@ class AutoreminderController extends Controller
      */
     public function update(Request $request, Autoreminder $autoreminder)
     {
-        //
-    }
+			$this->validate($request, [
+            'name' => 'required',
+            'days' => 'required|integer',
+        	'next_due' => 'required|date',			
+        ]);
+		
+		$autoreminder->name = $request->name;
+		$autoreminder->next_due = $request->next_due;
+		$autoreminder->days = $request->days;
+		$autoreminder->save();
+		
+    	return redirect(route('autoreminders.index'));    
+	}
 
     /**
      * Remove the specified resource from storage.

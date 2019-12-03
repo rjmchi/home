@@ -1,0 +1,257 @@
+/* CSS Document */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page_wrap {
+  position: relative;
+  margin: 25px;
+}
+
+.addlink {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #D9DCE5;
+}
+
+.addlink label {
+  font-weight: bold;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.addlink input {
+  padding: 3px;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  margin-top: 3px;
+}
+
+nav.menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav.menu li {
+  padding: 5px;
+  border: outset 2px #ccc;
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  margin: 10px;
+  min-height: 30px;
+}
+
+nav.menu a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: #fff;
+  color: #333;
+  display: block;
+}
+
+nav.menu li:hover {
+  border: inset 2px #ccc;
+  opacity: .6;
+}
+
+.client {
+  margin: 10px;
+}
+
+.client p {
+  margin-left: 25px;
+}
+
+.sidebar {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar table {
+  background-color: #d8ecf3;
+  border: 1px solid #222;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.sidebar table td {
+  padding: 0 20px;
+}
+
+.odd {
+  background-color: #eee;
+}
+
+.even {
+  background-color: #ddd;
+}
+
+.today {
+  color: #f00;
+}
+
+.past {
+  background-color: #ff0;
+  color: #f00;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 4px;
+  margin-left: 4px;
+  display: block;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  background-color: #ACAEBF;
+  border: outset #000;
+  color: #000;
+  text-decoration: none;
+  font-family: Helvetica, Arial, "sans-serif";
+  font-size: 15px;
+}
+
+.link_table {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.link_table input[type="text"] {
+  padding: 5px;
+}
+
+.link_table fieldset {
+  padding: 5px;
+}
+
+.link_table .name {
+  width: 225px;
+}
+
+.link_table .url {
+  width: 400px;
+}
+
+.link_table .image {
+  width: 170px;
+}
+
+.link_table .image_width {
+  width: 50px;
+}
+
+.link_table .image_height {
+  width: 50px;
+}
+
+.link_table .sort_order {
+  width: 50px;
+}
+
+.link_table .delete {
+  width: 50px;
+}
+
+.link_table .update {
+  width: 50px;
+}
+
+table.iplist {
+  padding: 10px;
+  margin: 10px;
+}
+
+table.iplist th,
+table.iplist td {
+  padding: 5px;
+}
+
+.button {
+  padding: 10px;
+  display: block;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+  border-radius: 2px;
+  background-color: #A5ACD7;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.alert-danger {
+  color: #f00;
+}
+
+table.video {
+  background-color: #644C9A;
+  margin: 20px auto 0;
+}
+
+table.video td {
+  padding: 3px;
+}
+
+/* Scss Document */
+
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  border: none;
+}
+
