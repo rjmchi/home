@@ -37,7 +37,12 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
-        //
+		$c = new Client();
+		$c->name = $request->name;
+		$c->url  = $request->url;
+		$c->client_id = $request->client_id;
+		$c->save();
+		return redirect (route('clients.index'));
     }
 
     /**
@@ -87,6 +92,8 @@ class ClientController extends Controller
     public function destroy(Client $client)
     {
 		$client->delete();
+		return redirect (route('clients.index'));
+
     }
 
 }

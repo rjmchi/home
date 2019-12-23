@@ -78,6 +78,7 @@
 </div><!-- end sidebar-->
 
 <a href="{{route('videos.index')}}">Videos</a>
+<a href="{{route('clients.index')}}">Edit Clients</a>
 
 <nav class="menu">
 <ul>

@@ -5,11 +5,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.page_wrap {
+.page-wrap {
 	position:relative;
 	margin:25px;
 }
-
 
 .odd {
 	background-color:#eee;
@@ -23,7 +22,6 @@ body {
 	padding:20px;
 	display:flex;
 	flex-wrap:wrap;
-	justify-content: space-around
 }
 
 .client_table p {
@@ -43,9 +41,11 @@ body {
 	width:400px;
 }
 
-
 .client_table .delete {
-	width:50px;
+	width:65px;
+	padding:10px;
+	background-color:#E1474A;
+	color:#fff;
 }
 .client_table .update {
 	width:50px;
