@@ -26,6 +26,7 @@
 	</p>
 	@foreach ($clients as $client) 
 		<form action="{{ route('clients.update', $client->id)}}" method="post">
+			<input type="hidden" name="_method" value="PUT">
 			<fieldset class="{{ ( $odd ) ? 'odd' : 'even' }}">
 				<input type="hidden" name="id" value="{{ $client->id}}">
 				{{ csrf_field() }}

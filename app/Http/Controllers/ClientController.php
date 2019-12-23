@@ -43,10 +43,10 @@ class ClientController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function show(Client $id)
+    public function show(Client $client)
     {
         //
     }
@@ -54,10 +54,10 @@ class ClientController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  Client  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Client $id)
+    public function edit(Client $client)
     {
         //
     }
@@ -66,23 +66,27 @@ class ClientController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Client $id)
+    public function update(Request $request, Client $client)
     {
-        //
+		$client->name = $request->name;
+		$client->url = $request->url;
+		$client->client_id = $request->client_id;
+		$client->save();
+		return redirect (route('clients.index'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  Client  $client
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Client $id)
+    public function destroy(Client $client)
     {
-		$id->delete();
+		$client->delete();
     }
 
 }
