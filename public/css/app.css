@@ -141,6 +141,14 @@ nav.menu li:hover {
   font-size: 15px;
 }
 
+.admin {
+  background-color: #ccc;
+}
+
+.admin .btn {
+  display: inline-block;
+}
+
 .link_table {
   padding: 20px;
   display: -webkit-box;

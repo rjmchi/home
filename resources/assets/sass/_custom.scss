@@ -116,6 +116,13 @@ nav.menu {
 	font-size:15px;
 }
 
+.admin {
+	background-color:#ccc;
+	.btn {
+		display: inline-block;
+	}
+}
+
 .link_table {
 	padding:20px;
 	display:flex;

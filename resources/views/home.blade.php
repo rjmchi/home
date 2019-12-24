@@ -77,9 +77,10 @@
 </div><!--end reminders-->
 </div><!-- end sidebar-->
 
-<a href="{{route('videos.index')}}">Videos</a>
-<a href="{{route('clients.index')}}">Edit Clients</a>
-
+<div class="admin">
+	<a class="btn btn-primary" href="{{route('videos.index')}}">Videos</a>
+	<a class="btn btn-primary" href="{{route('clients.index')}}">Edit Clients</a>
+</div>
 <nav class="menu">
 <ul>
 @foreach ($links as $link)
