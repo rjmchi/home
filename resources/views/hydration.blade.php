@@ -5,13 +5,11 @@
 
 @section ('content')
 
-<form method="post" action="{{route('hydration.calc')}}">
+<form method="post" action="{{route('hydration.calc')}}" class="hydration">
 	{{csrf_field()}}
 	
 	<label for="starter">Starter: </label>
 	<input type="text" name="starter">
-	<label for="starterper">Starter %</label>
-	<input type="text" name="starterper" value="100">
 	<label for="flour">Flour</label>
 	<input type="text" name="flour">
 	<label for="water">Water</label>
@@ -20,12 +18,15 @@
 	<button type="submit">Caclulate</button>
 </form>
 
+
+<div class="hydration">
 @if($hydration)
-	<p>Hydration = {{$hydration}}</p>
-@endif
+	<p>Hydration = {{$hydration}} %</p>
+@endif	
+	<p>Starter %: {{$starterper * 100}}</p>
+	<p>Total Flour: {{$flour}}</p>
+	<p>Total Water: {{$water}}</p>
+</div>
 
-<p>Starterper: {{$starterper}}</p>
-<p>Flour: {{$flour}}</p>
-<p>Water: {{$water}}</p>
-
+<p><a href="{{route('hydration')}}">Reset</a></p>
 @endsection

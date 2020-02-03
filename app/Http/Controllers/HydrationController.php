@@ -16,10 +16,12 @@ class HydrationController extends Controller
 	}
 	
 	public function calculate(Request $request){
-		$starterper = $request->starterper / 100;
 		
-		$flour = $request->flour + ($request->starter * $starterper);
-		$water = $request->water + ($request->starter * $starterper);
+		$starter = $request->starter;
+		$starterper = $starter / $request->flour;
+		
+		$flour = $request->flour + ($starter/2);
+		$water = $request->water + ($starter/2);
 
 		$data['hydration'] = ($water/$flour) * 100;
 		$data['title']= 'Calculate Hydration';

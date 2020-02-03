@@ -199,3 +199,29 @@ table.video {
 	}
 }
 
+form.hydration {
+	margin:25px;
+	padding:25px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+
+	label {
+		margin-left:25px;
+	}
+	input {
+		padding:10px;
+	}
+	button {
+		padding:10px;
+		margin:10px;
+		background-color:#431263;
+		color:#fff;
+		border-radius: 5px;
+	}
+}
+
+div.hydration {
+	margin:25px;
+	line-height: 1.5em;
+}
+
