@@ -179,6 +179,22 @@ div.hydration {
   border: 2px solid #370F3A;
   box-shadow: 3px 3px #431263; }
 
+/* CSS Document */
+.recipes {
+  margin: 25px; }
+  .recipes .recipe {
+    margin: 25px;
+    border: 2px solid #32073A;
+    border-radius: 10px;
+    padding: 25px; }
+    .recipes .recipe h3 {
+      margin-bottom: 5px; }
+    .recipes .recipe p {
+      margin-left: 25px; }
+    .recipes .recipe .ingredients {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+
 /* Scss Document */
 /* CSS Document */
 * {
