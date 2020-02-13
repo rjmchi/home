@@ -9,6 +9,10 @@ body {
 	margin:25px;
 }
 
+.content {
+	width:100%;
+}
+
 .addlink {
 	flex-basis:50%;
 	border:1px solid #ccc;
@@ -221,7 +225,12 @@ form.hydration {
 }
 
 div.hydration {
-	margin:25px;
+	width:50%;
+	margin:25px auto;
 	line-height: 1.5em;
+	border-radius: 10px;
+	padding:25px;
+	border:2px solid #370F3A;
+	box-shadow: 3px 3px #431263;
 }
 
