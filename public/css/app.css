@@ -194,6 +194,17 @@ div.hydration {
     .recipes .recipe .ingredients {
       margin-top: 15px;
       margin-bottom: 15px; }
+    .recipes .recipe .btn {
+      width: 135px;
+      height: 35px;
+      font-size: .9em;
+      line-height: 30px; }
+  .recipes .btn-primary {
+    background-color: #22033A;
+    color: #ccc; }
+  .recipes .btn-danger {
+    background-color: #9B0000;
+    color: #fff; }
 
 /* Scss Document */
 /* CSS Document */
