@@ -20,7 +20,7 @@ class HomeController extends Controller
 		$data['links'] = Link::orderBy('sort_order')->get();	
 		$data['clients'] = Client::where('client_id',null)->get();	
 
-		$today = Carbon::today();
+		$today = Carbon::today('America/Chicago');
 
 		foreach ($reminders as $reminder) {
 			$reminder->due = '';
@@ -56,6 +56,7 @@ class HomeController extends Controller
 		$data['title'] = "Robert's Home";
 		$data['reminders'] = $reminders;
 		$data['notes'] = $notes;
+		$data['today'] = $today;
 		
     	return view('home', $data);
 	}
