@@ -27,6 +27,7 @@
 <div class="reminders">
 
 <table>
+
 @php $odd = false; @endphp
 
 @foreach ($reminders as $reminder)
@@ -108,4 +109,3 @@
 			@endforeach
 		</div>
 	@endforeach
-@endsection
