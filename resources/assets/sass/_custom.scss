@@ -14,13 +14,13 @@ body {
 }
 
 .addlink {
-	flex-basis:50%;
 	border:1px solid #ccc;
 	padding:5px;
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	background-color:#D9DCE5;
+	flex-basis: 560px;
 	
 	label {
 		font-weight: bold;
@@ -74,7 +74,8 @@ nav.menu {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 14px;
 	display:flex;
-	justify-content: space-between;	
+	justify-content: space-around;	
+	flex-wrap: wrap;
 	
 	table {
 		background-color:#d8ecf3;	
@@ -84,6 +85,7 @@ nav.menu {
 	
 	table td {
 		padding:0 20px;
+		
 	}	
 }
 
