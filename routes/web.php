@@ -45,3 +45,9 @@ Route::resource ('recipes', 'RecipeController');
 //Route::resource ('ingredients', 'IngredientController');
 Route::get('/ingredients/{recipe_id}', 'IngredientController@create')->name('ingredients.create');
 Route::post('ingredients', 'IngredientController@store')->name('ingredients.store');
+
+Route::get('/notes', function() {
+	return view('notes');
+});
+
+Route::resource('howard', 'HowardPhotoController');
