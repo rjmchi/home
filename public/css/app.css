@@ -10,13 +10,13 @@ body {
   width: 100%; }
 
 .addlink {
-  flex-basis: 50%;
   border: 1px solid #ccc;
   padding: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #D9DCE5; }
+  background-color: #D9DCE5;
+  flex-basis: 560px; }
   .addlink label {
     font-weight: bold;
     flex-basis: 20%; }
@@ -57,7 +57,8 @@ nav.menu li:hover {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 14px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
   .sidebar table {
     background-color: #d8ecf3;
     border: 1px solid #222;
@@ -179,6 +180,11 @@ div.hydration {
   border: 2px solid #370F3A;
   box-shadow: 3px 3px #431263; }
 
+ul.howard-photos {
+  list-style: none;
+  margin: 25px;
+  padding: 10px; }
+
 /* CSS Document */
 .recipes {
   margin: 25px; }
@@ -199,12 +205,30 @@ div.hydration {
       height: 35px;
       font-size: .9em;
       line-height: 30px; }
-  .recipes .btn-primary {
-    background-color: #22033A;
-    color: #ccc; }
-  .recipes .btn-danger {
-    background-color: #9B0000;
-    color: #fff; }
+
+.btn-primary {
+  background-color: #22033A;
+  color: #ccc; }
+
+.btn-danger {
+  background-color: #9B0000;
+  color: #fff; }
+
+form.newrecipe {
+  margin: 0 auto;
+  width: 75%;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px; }
+  form.newrecipe .input-group {
+    display: flex;
+    padding: 25px; }
+  form.newrecipe label {
+    padding-top: 10px;
+    font-weight: bold; }
+  form.newrecipe input[type="text"], form.newrecipe textarea {
+    padding: 10px;
+    width: 90%; }
 
 /* Scss Document */
 /* CSS Document */
