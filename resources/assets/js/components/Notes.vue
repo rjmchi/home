@@ -6,7 +6,7 @@
 
 <script>
     export default {
-		data: {
+		data(){
 			return {
 				notes: [],
 					note: {
@@ -16,7 +16,7 @@
 						date: '',
 					},
 			}
-		}
+		},
         mounted() {
 
         }
