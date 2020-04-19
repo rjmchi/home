@@ -51,6 +51,7 @@ class RecipeController extends Controller
 		$r->flour = $request->flour;
 		$r->water = $request->water;
 		$r->salt = $request->salt;
+		$r->notes = $request->notes;
 		$r->save();
 		
     	return redirect(route('recipes.index'));

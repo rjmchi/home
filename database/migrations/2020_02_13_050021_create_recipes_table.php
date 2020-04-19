@@ -20,6 +20,7 @@ class CreateRecipesTable extends Migration
 			$table->integer('water');
 			$table->integer('starter');
 			$table->integer('salt');
+			$table->text('notes')->nullable();
             $table->timestamps();
         });
     }

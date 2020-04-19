@@ -25,14 +25,34 @@
 			line-height: 30px;
 		}
 	}
+}
+.btn-primary {
+	background-color:#22033A;
+	color:#ccc;
+}
 	
-	.btn-primary {
-		background-color:#22033A;
-		color:#ccc;
+.btn-danger {
+	background-color:#9B0000;
+	color:#fff;
+}	
+form.newrecipe {
+	margin:0 auto;
+	width:75%;
+	padding:25px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	.input-group {
+		display:flex;
+		padding:25px;
 	}
 	
-	.btn-danger {
-		background-color:#9B0000;
-		color:#fff;
+	label {
+		padding-top:10px;
+		font-weight: bold;
 	}
+	input[type="text"], textarea{
+		padding:10px;
+		width:90%;
+	}
+
 }
