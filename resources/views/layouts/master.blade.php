@@ -8,7 +8,7 @@
 
 <body>
 
-<div class="page_wrap">
+<div id="app" class="page_wrap">
 	<header>
 		@yield('header')
 	</header>
@@ -22,5 +22,8 @@
 <footer>
 	
 </div> <!-- end pagewrap-->
+	
+<script src="{{asset('js/app.js')}}"></script>
+
 </body>
 </html>
