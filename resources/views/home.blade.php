@@ -1,6 +1,5 @@
 @extends ('layouts.master')
 @section ('content')
-
 <div class="sidebar">
 
 <form action="{{ route('addlink') }}" method="post" id="addlink" class="addlink">
@@ -115,3 +114,4 @@
 			@endforeach
 		</div>
 	@endforeach
+@endsection
