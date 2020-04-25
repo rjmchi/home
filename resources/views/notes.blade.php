@@ -10,6 +10,8 @@
     <title>Notes</title>
 
     <!-- Scripts -->
+	<script src="https://kit.fontawesome.com/ee4a5395d5.js" crossorigin="anonymous"></script>	
+	
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
