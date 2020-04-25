@@ -20,16 +20,24 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	background-color:#D9DCE5;
-	flex-basis: 560px;
+	flex-basis: 588px;
 	
 	label {
 		font-weight: bold;
-		flex-basis:20%;	
+		flex-basis:92px;
+		margin-left:3px;
 	}
 	input {
 		padding:3px;
-		flex-basis:75%;
+		flex-basis:452px;
 		margin-top:3px;	}
+	.input-group {
+		display:flex;
+		flex-basis:95%;
+		input {
+			flex-basis:15%;
+		}
+	}
 }
 
 

@@ -11,12 +11,18 @@
 	<input type="text" name="url">
 	<label for="image">Image: </label>
 	<input type="text" name="image">
-	<label for="width">Image Width:</label>
-	<input type="text" name="width" value="150">
-	<label for="height">Image Height:</label>
-	<input type="text" name="height">
+		
+	<div class = "input-group">
+		<label for="width">Image Width:</label>
+		<input type="text" name="width" value="150">
+		<label for="height">Image Height:</label>
+		<input type="text" name="height">			
+	</div>
+	
 	<label for="sort_order">Sort Order:</label>
 	<input type="text" name="sort_order" value="1">		
+		
+	
 	<button type="submit" class="btn">Add Link</button>
 	<a href="{{ route('editlinks') }}" class="btn">Edit Links</a>
 </form>
