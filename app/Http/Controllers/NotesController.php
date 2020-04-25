@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Notes;
+use App\Note;
 use Illuminate\Http\Request;
 
 class NotesController extends Controller
@@ -14,7 +14,7 @@ class NotesController extends Controller
      */
     public function index()
     {
-		$notes = Notes::orderBy('date')->all();
+		$notes = Note::orderBy('updated_at', 'desc')->get();
 		return ($notes);
     }
 
@@ -36,8 +36,13 @@ class NotesController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $note = new Note;
+		$note->title = $request->title;
+		$note->note = $request->note;
+        $note->save();
+
+        return $note; 
+	}
 
     /**
      * Display the specified resource.
@@ -45,9 +50,9 @@ class NotesController extends Controller
      * @param  \App\Notes  $notes
      * @return \Illuminate\Http\Response
      */
-    public function show(Notes $notes)
+    public function show(Note $note)
     {
-        //
+		return $note;
     }
 
     /**
@@ -56,7 +61,7 @@ class NotesController extends Controller
      * @param  \App\Notes  $notes
      * @return \Illuminate\Http\Response
      */
-    public function edit(Notes $notes)
+    public function edit(Note $note)
     {
         //
     }
@@ -68,10 +73,14 @@ class NotesController extends Controller
      * @param  \App\Notes  $notes
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Notes $notes)
+    public function update(Request $request, Note $note)
     {
-        //
-    }
+		$note->title = $request->title;
+		$note->note = $request->note;
+        $note->save();
+
+        return $note; 
+	}
 
     /**
      * Remove the specified resource from storage.
@@ -79,8 +88,9 @@ class NotesController extends Controller
      * @param  \App\Notes  $notes
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Notes $notes)
+    public function destroy(Note $note)
     {
-        //
+		$note->delete();
+		return $note;
     }
 }
