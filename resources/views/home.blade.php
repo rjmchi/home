@@ -86,6 +86,7 @@
 <div class="admin">
 	<a class="btn btn-primary" href="{{route('videos.index')}}">Videos</a>
 	<a class="btn btn-primary" href="{{route('clients.index')}}">Edit Clients</a>
+	<a class="btn btn-primary" href="notes">Notes</a>
 </div>
 <nav class="menu">
 <ul>
