@@ -51,7 +51,8 @@ class HowardPhotoController extends Controller
 
 		$r->save();
 		
-    	return redirect(route('howard.index'));    }
+    	return redirect(route('howard.index'));    
+	}
 
     /**
      * Display the specified resource.
@@ -95,6 +96,6 @@ class HowardPhotoController extends Controller
      */
     public function destroy(HowardPhoto $howardPhoto)
     {
-        //
+//		$howardPhoto->delete();
     }
 }
