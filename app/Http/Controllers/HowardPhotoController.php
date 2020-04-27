@@ -14,9 +14,10 @@ class HowardPhotoController extends Controller
      */
     public function index()
     {
-		$data['title'] = 'Howards Photos';		
-		$data['photos'] = HowardPhoto::get();
-		return view('HowardPhotos.index')->with($data);
+//		$data['title'] = 'Howards Photos';		
+//		$data['photos'] = HowardPhoto::get();
+//		return view('HowardPhotos.index')->with($data);
+		return HowardPhoto::get();
     }
 
     /**
@@ -39,9 +40,9 @@ class HowardPhotoController extends Controller
      */
     public function store(Request $request)
     {
-		$this->validate($request, [
-            'url' => 'required',
-        ]);
+//		$this->validate($request, [
+//            'url' => 'required',
+//        ]);
 		
 		$r = new HowardPhoto;
 		if ($request->title){
@@ -51,7 +52,9 @@ class HowardPhotoController extends Controller
 
 		$r->save();
 		
-    	return redirect(route('howard.index'));    
+		return($r);
+		
+//    	return redirect(route('howard.index'));    
 	}
 
     /**
@@ -60,7 +63,7 @@ class HowardPhotoController extends Controller
      * @param  \App\HowardPhoto  $howardPhoto
      * @return \Illuminate\Http\Response
      */
-    public function show(HowardPhoto $howardPhoto)
+    public function show(HowardPhoto $howard)
     {
         //
     }
@@ -71,7 +74,7 @@ class HowardPhotoController extends Controller
      * @param  \App\HowardPhoto  $howardPhoto
      * @return \Illuminate\Http\Response
      */
-    public function edit(HowardPhoto $howardPhoto)
+    public function edit(HowardPhoto $howard)
     {
         //
     }
@@ -83,7 +86,7 @@ class HowardPhotoController extends Controller
      * @param  \App\HowardPhoto  $howardPhoto
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, HowardPhoto $howardPhoto)
+    public function update(Request $request, HowardPhoto $howard)
     {
         //
     }
@@ -94,8 +97,9 @@ class HowardPhotoController extends Controller
      * @param  \App\HowardPhoto  $howardPhoto
      * @return \Illuminate\Http\Response
      */
-    public function destroy(HowardPhoto $howardPhoto)
+    public function destroy(HowardPhoto $howard)
     {
-//		$howardPhoto->delete();
+		$howard->delete();
+		return $howard;
     }
 }

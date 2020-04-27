@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('notes', require('./components/Notes.vue'));
+Vue.component('howard-photos', require('./components/Howard.vue'));
 
 const app = new Vue({
     el: '#app'

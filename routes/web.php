@@ -50,4 +50,6 @@ Route::get('/notes', function() {
 	return view('notes');
 });
 
-Route::resource('howard', 'HowardPhotoController');
+Route::get('/howard', function() {
+	return view('howard');
+});
