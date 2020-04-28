@@ -17,6 +17,7 @@ window.Vue = require('vue');
 
 Vue.component('notes', require('./components/Notes.vue'));
 Vue.component('howard-photos', require('./components/Howard.vue'));
+Vue.component('hydration', require('./components/Hydration.vue'));
 
 const app = new Vue({
     el: '#app'

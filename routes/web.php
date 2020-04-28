@@ -31,9 +31,6 @@ Route::resource('autoreminders', 'AutoreminderController');
 Route::resource('videos', 'VideoController');
 Route::get('reordervideos','VideoController@reorder')->name('videos.reorder');
 
-Route::get('/hydration', 'HydrationController@index')->name('hydration');
-Route::post('/hydration', 'HydrationController@calculate')->name('hydration.calc');
-
 Route::get('/schedule', 'ScheduleController@index')->name('schedule.index');
 Route::post('schedule', 'ScheduleController@store')->name('schedule.store');
 Route::get('/schedule/create','ScheduleController@create')->name('schedule.create');
@@ -45,6 +42,11 @@ Route::resource ('recipes', 'RecipeController');
 //Route::resource ('ingredients', 'IngredientController');
 Route::get('/ingredients/{recipe_id}', 'IngredientController@create')->name('ingredients.create');
 Route::post('ingredients', 'IngredientController@store')->name('ingredients.store');
+
+
+Route::get('/hydration', function() {
+	return view('hydration');
+});
 
 Route::get('/notes', function() {
 	return view('notes');

@@ -1,32 +1,29 @@
-@extends ('layouts.master')
-@section('header')
-	<h2>{{$title}}</h2>
-@endsection
-
-@section ('content')
-
-<form method="post" action="{{route('hydration.calc')}}" class="hydration">
-	{{csrf_field()}}
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 	
-	<label for="starter">Starter: </label>
-	<input type="text" name="starter">
-	<label for="flour">Flour</label>
-	<input type="text" name="flour">
-	<label for="water">Water</label>
-	<input type="text" name="water">	
+    <title>Hydration Calculator</title>
+
+    <!-- Scripts -->
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	
-	<button type="submit">Caclulate</button>
-</form>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">	
 
-
-<div class="hydration">
-@if($hydration)
-	<p>Hydration = {{$hydration}} %</p>
-@endif	
-	<p>Starter %: {{$starterper * 100}}</p>
-	<p>Total Flour: {{$flour}}</p>
-	<p>Total Water: {{$water}}</p>
-</div>
-
-<p><a href="{{route('hydration')}}">Reset</a></p>
-@endsection
+</head>
+<body>
+    <div id="app">
+	<hydration></hydration>
+    </div>
+</body>
+</html>
