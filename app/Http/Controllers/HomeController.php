@@ -63,7 +63,7 @@ class HomeController extends Controller
 	
 	public function addLink(Request $request) {
 
-		\App\Link::create([
+		Link::create([
 			'name'=> $request->name,
 			'url'=> $request->url,
 			'image'=> $request->image,
@@ -76,13 +76,13 @@ class HomeController extends Controller
 	}
 	public function editLinks(Request $request) {
 		$data['title'] = "Edit Links";
-		$data['links'] = \App\Link::orderBy('sort_order')->get();	
+		$data['links'] = Link::orderBy('sort_order')->get();	
 		
 		return view('edit_links', $data);
 
 	}
 	public function updateLink(Request $request) {
-		$link = \App\Link::find($request->id);
+		$link = Link::find($request->id);
 
 		$update = false;
 		if ($request->name != $link->name)
@@ -123,12 +123,12 @@ class HomeController extends Controller
 	}
 	
 	public function deleteLink(Request $request) {
-		\App\Link::destroy($request->id);
+		Link::destroy($request->id);
 		return redirect()->back();
 	}
 	
 	public function reorderLinks(Request $request) {
-		$links = \App\Link::orderBy('sort_order')->get();	
+		$links = Link::orderBy('sort_order')->get();	
 		$i=5;
 		foreach($links as $link) {
 			$link->sort_order= $i;
@@ -147,8 +147,8 @@ class HomeController extends Controller
 		$r->save();
 
 		return redirect()->back();
-
 	}
+	
 	public function deleteReminder (Reminder $reminder) {
 		if ($reminder->days){
 			$reminder->due_date = $reminder->due_date->addDays($reminder->days);
