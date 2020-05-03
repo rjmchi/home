@@ -38,11 +38,6 @@ Route::patch('/schedule/{reminder}','ScheduleController@update')->name('schedule
 Route::delete('/schedule/{reminder}','ScheduleController@destroy')->name('schedule.destroy');
 Route::get('/schedule/{reminder}/edit','ScheduleController@edit')->name('schedule.edit');
 
-Route::resource ('recipes', 'RecipeController');
-//Route::resource ('ingredients', 'IngredientController');
-Route::get('/ingredients/{recipe_id}', 'IngredientController@create')->name('ingredients.create');
-Route::post('ingredients', 'IngredientController@store')->name('ingredients.store');
-
 
 Route::get('/hydration', function() {
 	return view('hydration');
