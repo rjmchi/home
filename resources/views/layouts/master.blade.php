@@ -20,7 +20,7 @@
 	
 <footer>
 	@yield ('footer')	
-<footer>
+</footer>
 	
 </div> <!-- end pagewrap-->
 	
