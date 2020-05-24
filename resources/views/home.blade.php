@@ -21,7 +21,6 @@
 	<label for="sort_order">Sort Order:</label>
 	<input type="text" name="sort_order" value="1">		
 		
-	
 	<button type="submit" class="btn">Add Link</button>
 	<a href="{{ route('editlinks') }}" class="btn">Edit Links</a>
 </form>
@@ -69,16 +68,19 @@
 
 </tr>	
 @endforeach
-<form action={{route("addreminder")}} method="post">
-
-{{ csrf_field() }}		
-			<tr>
-				<td> <input name="due_date" type="text"></td>
-				<td><input name="message" type="text"></td>
-				<td><input name="add" type="submit" value="Add"></td>
-			</tr>
-</form>				
+				
 </table>
+	
+<form action={{route("addreminder")}} method="post">
+	{{ csrf_field() }}		
+	<table>
+		<tr>
+			<td> <input name="due_date" type="text"></td>
+			<td><input name="message" type="text"></td>
+			<td><input name="add" type="submit" value="Add"></td>
+		</tr>
+	</table>
+</form>		
 	<a class="button" href="{{route('schedule.index')}}">Scheduled Reminders</a>
 </div><!--end reminders-->
 </div><!-- end sidebar-->
