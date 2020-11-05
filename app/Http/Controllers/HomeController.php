@@ -150,8 +150,13 @@ class HomeController extends Controller
 	}
 	
 	public function deleteReminder (Reminder $reminder) {
+
 		if ($reminder->days){
-			$reminder->due_date = $reminder->due_date->addDays($reminder->days);
+			if ($reminder->days % 30){
+				$reminder->due_date = $reminder->due_date->addDays($reminder->days);
+			} else {
+				$reminder->due_date = $reminder->due_date->addMonth($reminder->days/30);
+			}
 			$reminder->save();
 		} else {
 			$reminder->delete();
