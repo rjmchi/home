@@ -29,7 +29,7 @@
 				<td><form action="{{ route('schedule.destroy', $reminder->id) }}" method="post">
 					{{ csrf_field() }}
 					<input type="hidden" name="_method" value="delete">
-						<input name="delete" type="image" value="delete" src="../autoreminders/images/del.png" alt="Delete">
+						<input name="delete" type="image" value="delete" src="{{asset('/images/del.png')}}" alt="Delete">
 						<input name="id" type="hidden" value="{{ $reminder->id }}">
 					</form></td>
 			</tr>
