@@ -11,13 +11,18 @@ use App\Client;
 
 class HomeController extends Controller
 {
-    public function index() {
+    public function index($sort=false) {
+
 		$reminders = Reminder::whereNotNull('due_date')
 			->orderBy('due_date')
 			->get();
 		$notes = Reminder::whereNull('due_date')->get();
 				
-		$data['links'] = Link::orderBy('sort_order')->get();	
+		if ($sort){
+			$data['links'] = Link::orderBy('name')->get();	
+		}else {
+			$data['links'] = Link::orderBy('sort_order')->get();	
+		}
 		$data['clients'] = Client::where('client_id',null)->get();	
 
 		$today = Carbon::today('America/Chicago');

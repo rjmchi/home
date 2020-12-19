@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/{sort?}', 'HomeController@index')->name('home');
+
 Route::post('/AddLink', 'HomeController@addLink')->name('addlink');
 Route::get('/EditLinks', 'HomeController@editLinks')->name('editlinks');
 Route::post('UpdateLink', 'HomeController@updateLink')->name('updatelink');
