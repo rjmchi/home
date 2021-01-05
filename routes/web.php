@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/{sort?}', 'HomeController@index')->name('home');
+
 
 Route::post('/AddLink', 'HomeController@addLink')->name('addlink');
 Route::get('/EditLinks', 'HomeController@editLinks')->name('editlinks');
@@ -51,3 +51,5 @@ Route::get('/notes', function() {
 Route::get('/howard', function() {
 	return view('howard');
 });
+
+Route::get('/{sort?}', 'HomeController@index')->name('home');
