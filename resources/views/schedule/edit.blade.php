@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>{{ $title }}</title>
-<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
-<body>
-<div class="page-wrap">
+<body class="edit_reminder">
+<div class="page_wrap">
 	<header>
 		<h1>Edit Scheduled Reminder</h1>
 	</header>
