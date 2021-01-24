@@ -59,7 +59,7 @@
 <td>&nbsp;</td>
 <td>{{ $note->message }}</td>
 <td>
-	<form action="{{ route('deletereminder') }}" method="post">
+	<form action="{{ route('deletereminder',[$note->id]) }}" method="post">
 	{{ csrf_field() }}
 	<input name="delete" type="image" value="delete" src="images/del.png" alt="Delete">
 	<input name="id" type="hidden" value="{{ $note->id }}">
