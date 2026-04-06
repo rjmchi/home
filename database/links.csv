@@ -1,0 +1,133 @@
+id,name,url,image,image_width,image_height,sort_order,created_at,updated_at
+40,duckduckgo,duckduckgo.com,duckduckgo.jpg,150,99,460,,2025-03-16 15:42:23
+41,google,google.com,google.jpg,150,53,470,,2025-03-16 15:42:23
+42,YouTube,youtube.com,youtube.jpg,150,106,480,,2025-03-16 15:42:23
+43,NetFlix,netflix.com,netflix.png,150,40,760,,2025-03-16 15:42:23
+44,Hulu,www.hulu.com,hulu.svg,150,40,770,,2025-03-16 15:42:23
+45,TDAmeritrade,www.tdameritrade.com,tdameritrade.png,150,40,780,,2025-03-16 15:42:23
+46,Facebook,facebook.com,facebook.png,150,43,490,,2025-03-16 15:42:23
+47,ChicagoPotters,chicagopotters.com,chicagopotters.jpg,150,64,690,,2025-03-16 15:42:23
+48,Skolnik,www.skolnik.com,skolnik.jpg,150,42,660,,2025-03-16 15:42:23
+50,LinkedIn,www.linkedin.com/,linkedin.jpg,150,48,790,,2025-03-16 15:42:23
+51,IMDB,imdb.com,imdb.jpg,150,72,800,,2025-03-16 15:42:23
+52,RJMChicago,www.rjmchicago.com,rjmchicagologo.jpg,150,,700,,2025-03-16 15:42:23
+53,RJMProgramming.com,www.rjmprogramming.com,,150,,710,,2025-03-16 15:42:23
+54,RJMProgramming.com Comments,rjmprogramming.com/get_comments.php,,150,,740,,2025-03-16 15:42:23
+55,RJMProgramming CPanel,metro707.hostmetro.com:2222/,,150,,750,,2025-03-16 15:42:23
+56,Constant Contact,constantcontact.com/login,constant-contact.png,150,25,670,,2025-03-16 15:42:23
+57,Local PHPMyAdmin,127.0.0.1/phpmyadmin,,150,,240,,2025-03-16 15:42:23
+60,Pixlr,pixlr.com/,,150,,820,,2025-03-16 15:42:23
+61,Sprite Cow,www.spritecow.com/,,150,,830,,2025-03-16 15:42:23
+64,Astrology Lessons,astrolibrary.org/lessons/,,150,,920,,2025-03-16 15:42:23
+67,Tarot Documentary,www.youtube.com/watch?v=LIqwpwZJlMo,,150,,850,,2025-03-16 15:42:23
+69,CSS Gradient Generator,www.colorzilla.com/gradient-editor/,,150,,860,,2025-03-16 15:42:23
+70,GitHub,github.com/,github.png,150,38,870,,2025-03-16 15:42:23
+71,BitBucket,bitbucket.org/,bitbucket.png,150,,880,,2025-03-16 15:42:23
+73,Search Replace Database (move wordpress),localhost/search-replace-db/,,150,,890,,2025-03-16 15:42:23
+74,Flexbox,css-tricks.com/snippets/css/a-guide-to-flexbox/,,150,,910,,2025-03-16 15:42:23
+75,What's App,web.whatsapp.com,whatsapp.png,150,,930,2017-08-29 21:45:54,2025-03-16 15:42:23
+77,Square Dance,videosquaredancelessons.com/lessons/,,150,,1060,2017-09-23 22:43:15,2025-03-16 15:42:23
+78,Pinterest,www.pinterest.com/,pinterest-logo.png,150,,520,2017-10-06 20:34:07,2025-03-16 15:42:23
+79,HotMail,outlook.com,hotmail.png,130,,680,2017-11-16 16:18:34,2025-03-16 15:42:23
+80,Professor Pincusion,www.professorpincushion.com/videos/,,150,,950,2017-12-05 17:14:03,2025-03-16 15:42:23
+81,Los Palmares,lospalmarescondo.com/,lospalmares.png,150,,960,2017-12-05 20:03:06,2025-03-16 15:42:23
+82,Free Sewing Patterns,freesewing.org/,freesewing.svg,150,,940,2017-12-13 21:30:15,2025-03-16 15:42:23
+83,gtmetrix.com/,gtmetrix.com/,,150,,420,2018-01-02 00:56:16,2025-03-16 15:42:23
+84,Passwords,localhost/passwords,,150,,410,2018-01-25 20:45:43,2025-03-16 15:42:23
+85,sqlite admin,localhost/phpliteadmin/phpliteadmin.php,,150,,250,2018-02-07 15:00:43,2025-03-16 15:42:23
+86,bodybuilding.com,www.bodybuilding.com/exercises/equipment/dumbbell,,150,,840,2018-03-24 18:11:20,2025-03-16 15:42:23
+88,Sandhill fabrics,sandhillfabrics.com/,,150,,970,2018-09-03 17:03:52,2025-03-16 15:42:23
+89,fabrics by the yard,www.fabricsyard.com/,,150,,980,2018-09-03 17:04:26,2025-03-16 15:42:23
+91,digital ocean laravel setup,devmarketer.io/learn/deploy-laravel-5-app-lemp-stack-ubuntu-nginx/,,150,,990,2018-10-22 20:24:17,2025-03-16 15:42:23
+92,Digital Ocean,digitalocean.com,digitalocean.png,150,,530,2018-10-22 22:48:43,2025-03-16 15:42:23
+93,Laravel Documentation,laravel.com/docs,laravel.png,150,,550,2018-10-23 13:48:37,2025-03-16 15:42:23
+94,Bootstrap,getbootstrap.com,bootstrap.png,150,,650,2018-10-23 13:49:02,2025-03-16 15:42:23
+96,Laravel Collective Forms,laravelcollective.com/docs,,150,,600,2018-10-28 15:53:47,2025-03-16 15:42:23
+98,CFE,www.cfe.mx/Pages/Index.aspx,cfe.png,150,,350,2018-11-11 15:47:22,2025-03-16 15:42:23
+99,testing server:8000,localhost:8000,,150,,310,2018-11-12 07:23:45,2025-03-16 15:42:23
+100,faker stuff,fakerphp.github.io/,,150,,610,2018-11-24 20:19:46,2025-03-16 15:42:23
+101,Deploy Laravel on Shared Host,medium.com/laravel-news/the-simple-guide-to-deploy-laravel-5-application-on-shared-hosting-1a8d0aee923e,,150,,1000,2018-12-16 15:31:58,2025-03-16 15:42:23
+103,Telmex,telmex.com/,telmex.png,150,,340,2019-03-08 15:26:52,2025-03-16 15:42:23
+105,Pexels Stock Photos,www.pexels.com/,,150,,810,2019-03-09 14:14:45,2025-03-16 15:42:23
+106,Sudoku,thesudoku.com/,,150,,1170,2019-03-13 19:08:01,2025-03-16 15:42:23
+107,Duolingo,duolingo.com,duolingo.png,150,,430,2019-03-16 15:46:40,2025-03-16 15:42:23
+108,Study Spanish,studyspanish.com/,,150,,1020,2019-03-24 17:23:09,2025-03-16 15:42:23
+109,Northwestern,myc.nm.org/MyChart/,nwmedicine.png,150,,1010,2019-04-07 00:28:13,2025-03-16 15:42:23
+110,Destinos,www.learner.org/series/destinos-an-introduction-to-spanish/,,150,,1030,2019-05-14 14:56:45,2025-03-16 15:42:23
+111,Chitown Sqares,www.chitownsquares.org/,chitown.png,150,,1040,2019-07-24 06:55:19,2025-03-16 15:42:23
+112,IAGSDC,iagsdc.org,iagsdc.png,150,,1050,2019-08-17 14:50:31,2025-03-16 15:42:23
+113,Testing Server:8080,localhost:8080,,150,,320,2019-09-24 22:20:42,2025-03-16 15:42:23
+115,Laracast,laracasts.com/,,150,,590,2019-11-22 02:29:34,2025-03-16 15:42:23
+116,MailTrap,mailtrap.io,mailtrap.svg,150,,640,2019-11-24 16:22:25,2025-03-16 15:42:23
+117,Sew It Acadamy,sew-it-academy.thinkific.com,,150,,230,2020-01-19 15:08:55,2025-03-16 15:42:23
+118,Mah Jongg,myjongg.net,mahjongg.png,150,,1180,2020-02-01 15:05:50,2025-03-16 15:42:23
+119,Hydration Calculator,home.rjm/hydration,,150,,1070,2020-02-03 16:36:27,2025-03-16 15:42:23
+120,Bread Recipes,breadrecipes.rjm,,150,,1080,2020-02-13 08:44:29,2025-03-16 15:42:23
+121,Spanish Dictionary,www.spanishdict.com/,spanishdict.svg,150,,440,2020-02-13 15:56:20,2025-03-16 15:42:23
+122,Testing Server:3000,localhost:3000,,150,,330,2020-02-27 23:33:57,2025-03-16 15:42:23
+123,Robert's Bread Recipes,robertsbreadrecipes.wordpress.com/,,150,,220,2020-03-15 16:34:29,2025-03-16 15:42:23
+124,Howard's Photos,home.rjm/howard,,150,,1100,2020-04-19 15:07:40,2025-03-16 15:42:23
+125,Crossword Puzzles,www.onlinecrosswords.net/printable-daily-crosswords.php,crosswords.png,150,,1160,2020-05-01 16:21:35,2025-03-16 15:42:23
+126,Libby,libbyapp.com,libby.png,150,104,1110,2020-06-10 06:51:04,2025-03-16 15:42:23
+127,Khan Academy,www.khanacademy.org/,khan_academy.png,150,,620,2020-06-16 06:50:49,2025-03-16 15:42:23
+128,Heroku,heroku.com,heroku.png,150,,540,2020-07-01 23:47:23,2025-03-16 15:42:23
+129,Palapa,www.lospalmarespalapa.com,,150,,200,2020-08-01 16:31:44,2025-03-16 15:42:23
+132,Google Fonts,fonts.google.com/,,150,,900,2020-11-22 16:21:04,2025-03-16 15:42:23
+133,ISS View,www.ustream.tv/channel/iss-hdev-payload,,150,,1120,2020-12-13 15:31:01,2025-03-16 15:42:23
+134,ISS Location,iss.astroviewer.net,,150,,1130,2020-12-13 15:33:23,2025-03-16 15:42:23
+135,MongoDB,mongodb.com,,150,,1140,2020-12-15 16:16:48,2025-03-16 15:42:23
+136,MongoDB Univeristy,university.mongodb.com/dashboard,,150,,1150,2020-12-15 16:19:55,2025-03-16 15:42:23
+137,802 Calendar,calendarrailway-production.up.railway.app/,calendar802.png,150,,210,2021-01-02 17:06:18,2026-01-09 17:24:37
+138,Justin Guitar,justinguitar.com,,150,,180,2021-01-03 18:40:40,2025-03-16 15:42:22
+139,Ultimate Guitar,www.ultimate-guitar.com/explore,,150,,190,2021-02-12 18:54:55,2025-03-16 15:42:22
+141,Udemy,udemy.com,logo-udemy.svg,150,,630,2021-06-19 01:35:06,2025-03-16 15:42:23
+142,Carbon,carbon.nesbot.com/,,150,,270,2021-07-07 06:23:14,2025-03-16 15:42:23
+143,Instagram,instagram.com,instagram.png,150,,510,2021-08-05 14:37:26,2025-03-16 15:42:23
+144,Our TV App,ourtvapp.herokuapp.com/,OurTVApp.png,150,,150,2021-10-04 06:40:00,2025-03-16 15:42:22
+145,Emmet Cheat Sheet,docs.emmet.io/cheat-sheet/,,150,,580,2021-10-05 15:55:41,2025-03-16 15:42:23
+147,chicagopotters local,chicagopotters.rjm,,150,,160,2021-11-22 15:19:55,2025-03-16 15:42:22
+149,rjmprogramming Local,rjmprogramming.rjm,,150,,170,2021-11-24 22:03:34,2025-03-16 15:42:22
+151,Mexican forms,www.manascuba.com/blog/2021/4/7/mexico-customs-and-immigration-forms-online,,150,,1190,2022-01-03 03:24:07,2025-03-16 15:42:23
+153,Palapa Data,palapaorders.herokuapp.com/,,150,,140,2022-02-05 00:58:34,2025-03-16 15:42:22
+154,phaser test,phasergame.rjm,,150,,100,2022-02-11 17:14:05,2025-03-16 15:42:22
+156,Wawak (sewing),www.wawak.com/,,150,,1200,2022-04-03 03:40:42,2025-03-16 15:42:23
+157,Modern Mah Jongg,modernmahjong.com/,,150,,120,2022-04-18 03:12:24,2025-03-16 15:42:22
+158,QR Code Monkey,www.qrcode-monkey.com/,,150,,130,2022-06-09 18:57:13,2025-03-16 15:42:22
+159,Google Translate,translate.google.com,,150,,450,2022-07-22 15:39:49,2025-03-16 15:42:23
+160,RJMProgramming PHPAdmin,rjmprogramming.com/myadmin,,150,,720,2022-10-06 16:02:45,2025-03-16 15:42:23
+161,Free Embroidery Designs,www.embroiderydesigns.com/freeembroiderydesigns,,150,,360,2022-10-17 05:56:34,2025-03-16 15:42:23
+162,Free Embroidery Designs,embroideres.com/free-embroidery-designs/,,150,,370,2022-10-17 05:57:12,2025-03-16 15:42:23
+163,Free Embroidery Designs,www.freeembroiderydesign.net/,,150,,380,2022-10-17 05:57:42,2025-03-16 15:42:23
+164,Free Embroidery Designs,www.creativefabrica.com/freebies/free-embroidery-designs/,,150,,390,2022-10-17 05:58:13,2025-03-16 15:42:23
+165,Margarita Recipe,margarita.up.railway.app/,margarita.png,100,100,1090,2022-10-30 00:28:20,2025-03-16 15:42:23
+166,Free SVG,freesvg.org/,,150,,400,2022-11-11 05:54:00,2025-03-16 15:42:23
+167,Codeigniter,codeigniter.com/user_guide/index.html,codeigniter.png,150,,570,2023-07-07 01:24:57,2025-03-16 15:42:23
+168,KDP Videos,kdpvideos.rjm/,,150,,70,2023-07-08 02:40:15,2025-03-16 15:42:22
+169,1password,my.1password.com/home,,150,,90,2023-07-08 16:21:25,2025-03-16 15:42:22
+170,Monero Ocean,moneroocean.stream/,,150,,1210,2023-07-15 16:14:41,2025-03-16 15:42:23
+171,My Amazon Books,amazondb.rjm,,150,,80,2023-09-29 16:02:20,2025-03-16 15:42:22
+172,Indesign Scripting Reference,www.indesignjs.de/extendscriptAPI/indesign-latest/#Application.html,,150,,20,2023-09-30 17:44:28,2025-03-16 15:43:24
+173,Amazon Authors Page,www.amazon.com/stores/Robert-J-Milanowski/author/B0CKM4CSDL,,150,,60,2023-10-07 14:15:56,2025-03-16 15:42:22
+174,amazon best sellers,www.amazon.com/best-sellers-books-Amazon/zgbs/books/,,150,,40,2023-10-16 15:20:49,2025-03-16 15:42:22
+175,FavIcon Generator,realfavicongenerator.net/,,150,,30,2023-10-22 01:15:55,2025-03-16 15:43:24
+176,KDP Report,kdpreports.amazon.com/dashboard,,150,,50,2023-11-17 18:37:37,2025-03-16 15:42:22
+177,KDP Sales,kdpsales.rjm/,,150,,1220,2024-02-01 15:32:43,2025-03-16 15:42:23
+178,Free APIs,freetestapi.com/,,150,,260,2024-06-09 00:13:48,2025-03-16 15:42:23
+179,Hostmetro,hostmetro.com,,150,,730,2024-09-23 16:37:12,2025-03-16 15:42:23
+180,Laravel Livewire,livewire.laravel.com/,,150,,560,2024-11-15 00:53:49,2025-06-07 23:11:50
+181,FlowBite,flowbite.com,,150,,280,2024-11-15 18:33:40,2025-03-16 15:42:23
+182,TailGrids,tailgrids.com,,150,,290,2024-11-15 18:34:07,2025-03-16 15:42:23
+183,HeroIcons,heroicons.com,,150,,300,2024-11-15 18:34:54,2025-03-16 15:42:23
+184,Strava,www.strava.com/dashboard,strava.png,150,,110,2024-12-07 19:10:50,2025-03-16 15:42:22
+185,Blue Sky,bsky.app/,,150,,500,2025-01-31 15:42:17,2025-03-16 15:42:23
+186,Park Swimming Pool,www.chicagoparkdistrict.com/parks-facilities/kosciuszko-park-pool,,150,,10,2025-03-16 15:42:09,2025-03-16 15:43:24
+187,Amazon Photos,www.amazon.com/photos?sf=1&ref_=APH_SNPA7,,150,,8,2025-04-15 02:40:57,2026-03-14 17:10:10
+188,Pattern Projector,www.patternprojector.com,,150,,6,2025-05-24 14:50:09,2026-03-14 17:10:03
+189,Our mahjongg page,rjmchi.github.io/mahjongg/,,150,,9999,2025-06-10 03:10:23,2025-07-13 07:21:35
+190,React Server,localhost:5173/,,150,,335,2025-07-09 22:51:01,2025-07-09 22:51:25
+191,Jared Training,macfarlanefitness1.trainerize.com/app/client/25219229/dash,,150,,2,2025-08-21 16:05:23,2026-03-14 17:09:47
+192,Medicare,medicare.gov,25,150,,4,2025-10-07 18:32:52,2026-03-14 17:09:57
+193,Cocktails,drinks-production-2204.up.railway.app/,cocktail.png,100,100,9000,2025-10-22 20:59:58,2025-11-23 06:54:44
+194,My Fitness Pal,www.myfitnesspal.com/,myfitnesspal.png,150,,9999,2025-11-12 19:36:53,2025-11-12 19:39:53
+195,Express Scripts,www.express-scripts.com,,150,,100,2026-01-20 16:58:24,2026-01-20 16:58:24
+197,Tide Chart,www.tide-forecast.com/locations/Puerto-Vallarta-Jalisco-Mexico/tides/latest,tides.svg,150,,15,2026-03-14 17:06:27,2026-03-14 17:09:14

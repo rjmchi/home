@@ -1,0 +1,79 @@
+id,name,url,category,notes,sort_order,created_at,updated_at
+1,Guitar Lessons,www.youtube.com/playlist?list=PL59887F15772E873D,,10,2017-10-13 21:14:24,2019-05-02 05:57:19,Guitar
+2,Sew a Belt,www.youtube.com/watch?v=shx7f5mE_zw,,180,2017-10-13 21:15:05,2020-06-12 01:33:54,Sewing
+3,Guitar Lessons,www.youtube.com/watch?v=orp7WHibnaU,Day 3 -  E chord - 21:31,20,2017-10-13 21:16:00,2019-06-24 16:24:22,Guitar
+4,west valley sewing,www.youtube.com/watch?v=og0WnNQym6A&list=PLCF303DBC3D261B27,,190,2019-04-03 15:33:31,2020-06-12 01:33:54,Sewing
+5,Sew Summer Dress,www.youtube.com/watch?v=-eHP4cCc710,,200,2019-05-01 22:15:49,2020-06-12 01:33:54,Sewing
+6,Spanish Listening,www.youtube.com/watch?v=dY2tjhBVAps,,30,2019-05-01 22:18:18,2020-06-12 01:33:54,Spanish
+7,Spanish,//www.youtube.com/watch?v=ebmLyi0Mu1M,,20,2019-05-01 22:32:56,2020-06-12 01:33:54,Spanish
+8,Rolled Collar (Camp Shirt),//www.youtube.com/watch?v=XSgJ5x6fMM0,,80,2019-05-02 00:15:17,2020-06-12 01:33:54,Sewing
+9,Camp Shirt,//www.youtube.com/watch?v=WWTzPqFcFbc&feature=youtu.be&fbclid=IwAR0W3tf5Tc8aRzvRcoTMWG0D9LcX0FFbW75PjAvdaaf_jqsytqZCXDvxt_o,,160,2019-05-02 03:45:12,2020-06-12 01:33:54,Sewing
+10,Filter,www.youtube.com/watch?v=1lPuwnPTOJw,,100,2019-05-02 05:58:34,2020-06-12 01:33:54,Laravel
+11,admin,//www.youtube.com/watch?v=-t7oMHzIpBQ&list=PLLUtELdNs2ZY5drPxIWzpq5crhantlzp7,Page #10,130,2019-05-02 05:59:08,2020-06-12 01:33:54,Laravel
+12,Pants,//www.youtube.com/watch?v=-UYpX3SNLog&index=3&list=PLk-GMKIVprz1hzgZHNijizFiqIMobzTR6,,170,2019-05-02 06:00:04,2020-06-12 01:33:54,Sewing
+13,Pivot Tables (blog),//www.youtube.com/watch?v=7s0kzx4IxCA&list=PL3VM-unCzF8iPERY07XRw0JXG_c50CapR&index=30,,140,2019-05-02 06:41:30,2020-06-12 01:33:54,Laravel
+14,Project Manager,//www.youtube.com/watch?v=EabH3Pom_L8&index=31&list=PLnBvgoOXZNCP2LEKmvu2W-eUkO-DYn0TL,,150,2019-05-02 06:41:52,2020-06-12 01:33:54,Laravel
+15,Project Manager,www.youtube.com/watch?v=mv64TJBx4Fc&list=PLnBvgoOXZNCP2LEKmvu2W-eUkO-DYn0TL&index=51,55,70,2019-05-02 06:42:20,2020-06-12 01:33:54,Laravel
+16,Photo Gallery,www.youtube.com/watch?v=QJtWEqFh7Yk&index=2&list=PLnMSoEZFdrjdwF4g51oDuhvdh0EbqWAUm,,80,2019-05-02 06:42:37,2020-06-12 01:33:54,Laravel
+17,Photo Album,www.youtube.com/watch?v=iXYCnYRalaw,,90,2019-05-02 06:42:57,2020-06-12 01:33:54,Laravel
+18,Multi File Upload,//www.youtube.com/watch?v=--9I5wqXgUM&t=482s,,110,2019-05-02 06:43:23,2020-06-12 01:33:54,Laravel
+19,Shopping Cart,//www.youtube.com/playlist?list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR,,120,2019-05-02 06:43:46,2020-06-12 01:33:54,Laravel
+20,Ajax Todo List,//www.youtube.com/watch?v=_dd4-HEPejU&list=PL55RiY5tL51oloSGk5XdO2MGjPqc0BxGV,,160,2019-05-02 06:44:09,2020-06-12 01:33:54,Laravel
+21,Posture,www.youtube.com/watch?v=g-7ZWPCWv0U,,10,2019-05-02 06:47:53,2019-05-02 14:20:53,Fitness
+22,Posture,www.youtube.com/watch?v=K-CrEi0ymMg,,20,2019-05-02 06:48:09,2019-05-02 14:21:01,Fitness
+23,Beginners guide,www.youtube.com/watch?v=IBouhf4seWQ&list=PLYfCBK8IplO4X-jM1Rp43wAIdpP2XNGwP,12,10,2019-05-02 06:48:53,2019-06-24 16:24:22,Illustrator
+24,Men's Shirt,//www.youtube.com/watch?v=sgL1mGSVZUA&index=52&list=PLDr1SvHcecAZo1vN7cWeSFUzD7rtZeWba&t=0s,5:38,90,2019-05-02 06:49:47,2020-06-12 01:33:54,Sewing
+25,Pattern Making,//www.youtube.com/watch?v=lB9n4KFTRmE,28:35,100,2019-05-02 06:50:21,2020-06-12 01:33:54,Sewing
+26,Stella,stellaculinary.com/recipes/baking-pastry/baking/bread/brioche-bread-recipe-sliceable-bread-sandwiches-and-toast-points,,40,2019-05-02 06:50:59,2020-06-12 01:33:54,Bread
+27,Remove Anything,//www.youtube.com/watch?v=oOTxsRTjkNM,,10,2019-05-02 06:51:24,2019-06-24 16:24:22,Photoshop
+28,Pattern Making Men's Bodice,//www.youtube.com/watch?v=sqUsVphOoNc,,110,2019-05-02 07:12:25,2020-06-12 01:33:54,Sewing
+31,Men's Sloper,www.youtube.com/watch?v=u87AQY9yn4E,,120,2019-05-03 06:30:37,2020-06-12 01:33:54,Sewing
+32,Gathered Skirt,www.youtube.com/watch?v=SrMusrwp2N0,,130,2019-05-03 06:45:13,2020-06-12 01:33:54,Sewing
+33,draft skirt,www.youtube.com/watch?v=OqdexVsTFf8,,140,2019-05-09 14:52:34,2020-06-12 01:33:54,Sewing
+34,Bowl Cozy,www.youtube.com/watch?v=vYOqsRw_Irc&feature=youtu.be&fbclid=IwAR1QtkrH9kh9e1w8wn_3QaW1Aw5IcqHFZBZ7xl42C31IPVR5tQJsuULOAN0,,150,2019-05-12 15:55:17,2020-06-12 01:33:54,Sewing
+35,I Love Cooking Ireland,www.youtube.com/watch?v=2FVfJTGpXnU,,30,2019-05-12 16:19:34,2020-06-12 01:33:54,Bread
+36,Fly Zipper - Sewing guru,www.youtube.com/watch?v=W-ItX5EP08o&feature=youtu.be&fbclid=IwAR09G8Lt1DCrN30g7Jal9uwHujOgkwdJ1LsND1J9wfiTJvGofw9yxnyJLf4,zipper starts at 5:10,70,2019-06-24 15:25:16,2020-06-12 01:33:54,Sewing
+37,fly zipper,www.youtube.com/watch?v=51m-gnMbuNQ,,60,2019-06-28 07:16:54,2020-06-12 01:33:54,Sewing
+38,tutorial,www.youtube.com/watch?v=ImtZ5yENzgE,3 18:43,20,2019-09-16 23:47:07,2020-06-12 01:33:54,Laravel
+39,Test Driven Laravel,www.youtube.com/playlist?list=PLpzy7FIRqpGAbkfdxo1MwOS9xjG3O3z1y,number 5,30,2019-10-20 07:36:30,2020-06-12 01:33:54,Laravel
+40,Inside Zipper Pocket,www.youtube.com/watch?v=ET3IpIDq02o,,40,2019-11-07 15:54:52,2020-06-12 01:33:54,Sewing
+41,Mr Domestic Tote Bag,www.youtube.com/watch?v=A6_UGjRkmxo,,50,2019-11-07 15:55:23,2020-06-12 01:33:54,Sewing
+42,Laravel Backend CRUD,www.youtube.com/watch?v=4pc6cgisbKE,,40,2019-11-14 14:43:14,2020-06-12 01:33:54,Laravel
+43,Vue Front End,www.youtube.com/watch?v=DJ6PD_jBtU0,,50,2019-11-14 14:43:40,2020-06-12 01:33:54,Laravel
+44,VUE Drag and Drop,www.youtube.com/watch?v=1Yrzli1PqFc&t=16s,,60,2019-11-14 14:44:49,2020-06-12 01:33:54,Laravel
+45,API Versioning,www.youtube.com/watch?v=XYXalBUj36w&list=PL41lfR-6DnOppiHXkPKZ2tT1WBIjIufVs&index=6,6:37,10,2019-12-22 16:47:35,2020-06-12 01:33:54,Laravel
+46,Fly Front Zipper MassArt Fashion,www.youtube.com/watch?v=-hsd0xMQtNw,,10,2020-01-11 17:03:25,2020-06-12 01:33:54,Sewing
+47,Google Cloud Hosting,www.youtube.com/watch?v=vIJdypOqlL4,,10,2020-01-16 04:01:47,2020-06-12 01:33:54,Hosting
+48,Noris Danta Pants Sew Along,www.youtube.com/watch?v=SBbcvcyIwEk,Zipper at 32:20,20,2020-01-19 04:25:40,2020-06-12 01:33:54,Sewing
+49,Flexbox,www.youtube.com/watch?v=Vj7NZ6FiQvo&list=PLu8EoSxDXHP7xj_y6NIAhy0wuCd4uVdid,,10,2020-02-13 04:03:10,2020-06-12 01:33:54,CSS
+50,Baguettes,www.youtube.com/watch?v=ZqAE19OIfMc,,10,2020-03-11 07:23:42,2020-06-12 01:33:54,Bread
+51,Chat app with rooms,www.youtube.com/watch?v=jD7FnbI76Hg,,10,2020-03-25 07:22:50,2020-06-12 01:33:54,NodeJS/Socket.io
+52,Spanish For Beginners,www.youtube.com/playlist?list=PLTpetkN815Qyuc2RbC1kxxMQvxjQ3RnYG,Episode 20,10,2020-03-28 08:01:44,2020-07-05 15:54:41,Spanish
+53,baguette,www.youtube.com/watch?v=n0U8RdRdFDU,,20,2020-03-29 09:27:03,2020-06-12 01:33:54,Bread
+54,Deploy node app in digitalocean,www.youtube.com/watch?v=RE2PLyFqCzE,,10,2020-04-30 16:18:49,2020-07-08 03:15:21,NodeJS
+55,Multi Player Game,www.youtube.com/watch?v=JEYEpledOxs&t=275s,,20,2020-05-05 22:56:50,2020-06-12 01:33:54,NodeJS/Socket.io
+56,Pizza tips,www.youtube.com/watch?v=7UB1saPQe-c&t=312s,,10,2020-05-09 07:13:55,2020-06-12 01:33:54,Pizza
+57,firestick settings,www.youtube.com/watch?v=46NVQdfGC1M,,10,2020-06-08 06:55:00,2020-07-08 03:15:02,Firestick
+58,Fly Zipper,www.threadsmagazine.com/2008/11/04/video-easy-to-sew-flat-fly-front-zipper?fbclid=IwAR2OKw49XEk9urzpCyx1sRkBER3xlZsic_dieqrSs5pg56Cm3x7McPdJ4d0,Threads Magazine,30,2020-06-12 01:26:42,2020-06-12 01:33:54,Sewing
+59,Javascript game,www.youtube.com/watch?v=O6mWO4VTE2M&list=PLhPyEFL5u-i0YTLyvg74rV4jkpQj7MGS9,,1,2020-06-13 15:42:00,2020-06-13 15:42:00,Javascript
+60,Multi Language,www.youtube.com/watch?v=v5R367ZGQqI,,1,2020-06-27 03:27:14,2020-06-27 03:27:14,Database
+61,multi language,www.youtube.com/watch?v=lEccoYhzyos,,1,2020-07-08 03:14:07,2020-07-08 03:14:44,Laravel
+62,Thin crust Pizza,www.youtube.com/watch?v=URy43R1-Y-c,,1,2020-07-21 19:07:46,2020-07-21 19:07:46,Pizza
+63,Git,www.youtube.com/watch?v=RGOj5yH7evk,49:03,1,2020-08-08 16:12:34,2020-08-08 16:12:54,Git
+64,Americas Test Kitchen,www.youtube.com/watch?v=AyUNtvj6KmE,13.55,1,2020-08-09 00:34:57,2020-08-09 00:36:46,Bread
+65,Circular Motion,www.youtube.com/watch?v=raXW5J1Te7Y,,1,2020-08-24 18:07:52,2020-08-24 18:07:52,Canvas
+66,tutorial,www.youtube.com/watch?v=Ib8UBwu3yGA,,1,2020-08-27 04:23:49,2020-08-27 04:23:49,Illustrator
+67,Tutorial,www.youtube.com/watch?v=RXRT3dHu6_o,,1,2020-08-27 07:17:37,2020-08-27 07:17:37,InDesign
+68,ATK Chili,www.youtube.com/watch?v=nuuS_uBpRd4,home made chili powder,1,2020-09-18 06:24:00,2020-09-18 06:24:00,Chili
+69,Laravel Vue Bootstrap,www.youtube.com/playlist?list=PLFyDXtA1h60fuWiNrlhixqrg2XlRA0ySS,Deploy?  #14,1,2020-09-21 17:20:55,2020-09-21 17:20:55,Laravel
+70,Sequelize orm,www.youtube.com/watch?v=pxo7L5nd1gA&t=8s,,1,2020-09-27 20:09:40,2020-09-27 20:09:40,Sequelize
+71,REST API,www.youtube.com/playlist?list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q,,1,2020-09-29 07:06:00,2020-09-29 07:06:00,NodeJS
+72,Vue JS API,www.youtube.com/playlist?list=PLoYCgNOIyGADZuvKJweutZDOO9VI9YiJ9,,1,2020-10-01 22:32:51,2020-10-01 22:32:51,VueJS
+73,Vue JS,www.youtube.com/watch?v=g4g2TlTMXXQ,,1,2020-10-01 22:35:54,2020-10-01 22:35:54,VueJS
+74,Git Tutorial Net Ninja,www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&pbjreload=102,#12,1,2020-10-22 15:00:46,2020-10-22 15:00:46,Git
+75,Babka,www.youtube.com/watch?v=HmqHq2Nn7Hs,,1,2020-11-15 08:28:42,2020-11-15 08:28:42,Babka
+76,laravel,www.youtube.com/watch?v=MFh0Fd7BsjE,,1,2020-11-17 08:17:24,2020-11-17 08:17:24,laravel
+77,Zipper pouch with tabs,www.youtube.com/watch?v=eZJDx92cVGc,,1,2020-12-13 00:59:06,2020-12-13 00:59:06,Sewing
+78,Barre Chord Exercise,www.youtube.com/watch?v=a3LEZCSIGdc,,1,2021-01-14 08:33:36,2021-01-14 08:33:36,Guitar
+79,Sewing quarter Paul Clarke,https://www.youtube.com/watch?v=WfQKBtzfMUE&t=3437s,Sewing,Collar,0,2022-05-30 22:36:17,2022-05-30 22:36:17
+80,indesign tutorial,https://www.youtube.com/watch?v=WOFGbjV43Xw,indesign,,0,2023-09-30 02:05:03,2023-09-30 02:05:03
