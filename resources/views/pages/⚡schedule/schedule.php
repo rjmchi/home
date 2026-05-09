@@ -44,7 +44,7 @@ new #[Layout('layouts::guest')]  class extends Component
     public function edit(Reminder $reminder){
         $this->message = $reminder->message;
         $this->days = $reminder->days;
-        $this->due_date = $reminder->due_date;
+        $this->due_date = Carbon::create($reminder->due_date)->format('m/d/y') ;
         $this->editting = true;
         $this->id = $reminder->id;
 
