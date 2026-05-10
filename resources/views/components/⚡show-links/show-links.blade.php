@@ -1,5 +1,5 @@
 <div>
-    <div class="flex gap-3 flex-wrap mt-2 items-center justify-center">
+    <div class="flex gap-2 flex-wrap mt-2 items-center justify-center">
         <flux:button variant='primary' wire:click='addLink'>Add Link</flux:button>
         @foreach ($links as $link)
             @if ($link->image)
