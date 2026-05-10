@@ -3,10 +3,10 @@
         <flux:button variant='primary' wire:click='addLink'>Add Link</flux:button>
         @foreach ($links as $link)
             @if ($link->image)
-                <a href="{{ $link->url }}" class="lnk" target="_new"><img
+                <a href="{{ $link->url }}" class="lnk"><img
                         src="{{ asset('storage/' . $link->image) }}" alt="{{ $link->name }}"></a>
             @else
-                <a href="{{ $link->url }}" class="lnk" target="_new">{{ $link->name }}</a>
+                <a href="{{ $link->url }}" class="lnk">{{ $link->name }}</a>
             @endif
         @endforeach
     </div>
