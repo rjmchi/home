@@ -1,4 +1,4 @@
-id,name,url,category,notes,sort_order,created_at,updated_at
+id,name,url,notes,sort_order,created_at,updated_at,category
 1,Guitar Lessons,www.youtube.com/playlist?list=PL59887F15772E873D,,10,2017-10-13 21:14:24,2019-05-02 05:57:19,Guitar
 2,Sew a Belt,www.youtube.com/watch?v=shx7f5mE_zw,,180,2017-10-13 21:15:05,2020-06-12 01:33:54,Sewing
 3,Guitar Lessons,www.youtube.com/watch?v=orp7WHibnaU,Day 3 -  E chord - 21:31,20,2017-10-13 21:16:00,2019-06-24 16:24:22,Guitar
@@ -75,5 +75,5 @@ id,name,url,category,notes,sort_order,created_at,updated_at
 76,laravel,www.youtube.com/watch?v=MFh0Fd7BsjE,,1,2020-11-17 08:17:24,2020-11-17 08:17:24,laravel
 77,Zipper pouch with tabs,www.youtube.com/watch?v=eZJDx92cVGc,,1,2020-12-13 00:59:06,2020-12-13 00:59:06,Sewing
 78,Barre Chord Exercise,www.youtube.com/watch?v=a3LEZCSIGdc,,1,2021-01-14 08:33:36,2021-01-14 08:33:36,Guitar
-79,Sewing quarter Paul Clarke,https://www.youtube.com/watch?v=WfQKBtzfMUE&t=3437s,Sewing,Collar,0,2022-05-30 22:36:17,2022-05-30 22:36:17
-80,indesign tutorial,https://www.youtube.com/watch?v=WOFGbjV43Xw,indesign,,0,2023-09-30 02:05:03,2023-09-30 02:05:03
+79,Sewing quarter Paul Clarke,https://www.youtube.com/watch?v=WfQKBtzfMUE&t=3437s,Collar,0,2022-05-30 22:36:17,2022-05-30 22:36:17, Sewing
+80,indesign tutorial,https://www.youtube.com/watch?v=WOFGbjV43Xw,,0,2023-09-30 02:05:03,2023-09-30 02:05:03,indesign
